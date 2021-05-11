@@ -38,7 +38,7 @@ const Match = ({ setCurrentPnj, currentPnj }) => {
   };
 
   return (
-    <div>
+    <div className="div-match">
       {filteredCharacters.map(
         (character, index) =>
           randomId === index && (
