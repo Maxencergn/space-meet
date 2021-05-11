@@ -40,31 +40,6 @@ function Signup(props) {
     localStorage.setItem('other', other);
   };
 
-  const handleChangePseudo = (event) => {
-    setPseudo(event.target.value);
-  };
-  const handleChangeBirthday = (event) => {
-    setBirthday(event.target.value);
-  };
-  const handleChangeEmail = (event) => {
-    setEmail(event.target.value);
-  };
-  const handleChangeRace = (event) => {
-    setRace(event.target.value);
-  };
-  const handleChangeMale = (event) => {
-    setMale(event.target.value);
-  };
-  const handleChangeFemale = (event) => {
-    setFemale(event.target.value);
-  };
-  const handleChangeAi = (event) => {
-    setAi(event.target.value);
-  };
-  const handleChangeOther = (event) => {
-    setOther(event.target.value);
-  };
-
   return (
     <div className='ProfileCreation'>
       <h1 className='spacemeet'>Sign-up</h1>
@@ -80,7 +55,7 @@ function Signup(props) {
               name='pseudo'
               id='pseudo'
               placeholder='Pseudo'
-              onChange={handleChangePseudo}
+              onChange={(event) => setPseudo(event.target.value)}
               value={pseudo}
             />
           </label>
@@ -92,7 +67,7 @@ function Signup(props) {
               type='radio'
               name='genderOptions'
               id='inlineRadio1'
-              onChange={handleChangeMale}
+              onChange={(event) => setMale(event.target.value)}
               value={male}
             />
           </div>
@@ -105,7 +80,7 @@ function Signup(props) {
               type='radio'
               name='genderOptions'
               id='inlineRadio2'
-              onChange={handleChangeFemale}
+              onChange={(event) => setFemale(event.target.value)}
               value={female}
             />
           </div>
@@ -118,7 +93,7 @@ function Signup(props) {
               type='radio'
               name='genderOptions'
               id='inlineRadio2'
-              onChange={handleChangeAi}
+              onChange={(event) => setAi(event.target.value)}
               value={ai}
             />
           </div>
@@ -131,7 +106,7 @@ function Signup(props) {
               type='radio'
               name='genderOptions'
               id='inlineRadio2'
-              onChange={handleChangeOther}
+              onChange={(event) => setOther(event.target.value)}
               value={other}
             />
           </div>
@@ -146,7 +121,7 @@ function Signup(props) {
               type='date'
               name='birthday'
               id='birthday'
-              onChange={handleChangeBirthday}
+              onChange={(event) => setBirthday(event.target.value)}
               value={birthday}
             />
           </label>
@@ -158,7 +133,7 @@ function Signup(props) {
               type='text'
               name='race'
               id='race'
-              onChange={handleChangeRace}
+              onChange={(event) => setRace(event.target.value)}
               value={race}
             >
               <option value='Human'>Human</option>
@@ -185,7 +160,7 @@ function Signup(props) {
               name='email'
               id='email'
               placeholder='spacemeet@mail.com'
-              onChange={handleChangeEmail}
+              onChange={(event) => setEmail(event.target.value)}
               value={email}
             />
           </label>
