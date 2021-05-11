@@ -5,7 +5,7 @@ import profil from '../img/profil.png';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
-function ProfilCard({ id, name, img, race, quote, description, gender, setCurrentPnj }) {
+function ProfilCard({ characterId, name, img, race, quote, description, gender, setCurrentPnj, currentPnj }) {
 
   let planet = '';
 
@@ -16,7 +16,7 @@ function ProfilCard({ id, name, img, race, quote, description, gender, setCurren
 
   useEffect(() => {
     setCurrentPnj({
-      id: id,
+      id: characterId,
       name: name,
       race: race,
       gender: gender,

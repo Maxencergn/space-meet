@@ -1,11 +1,10 @@
 import './ProfilMassEffect.css';
 import { Link } from 'react-router-dom';
 import marker from '../img/marker.png';
+import profil from '../img/profil.png';
 import leftArrow from '../img/left-arrow.png';
 
 function ProfilMassEffect(props) {
-  
-  console.log(props);
   return (
     <div className='profil-masseffect'>
       <div className='container-img-profil'>
@@ -17,11 +16,15 @@ function ProfilMassEffect(props) {
       <div className='infos-container'>
         <h1>{props.currentPnj.name}</h1>
         <p>
-          <img className='marker-img' alt='' src={marker} />
+          <img className='marker-img-pnj' alt='' src={profil} />
+          {props.currentPnj.race}
+        </p>
+        <p>
+          <img className='marker-img-pnj' alt='' src={marker} />
           {props.currentPnj.planet}
         </p>
         <hr width='90%' align='center'></hr>
-        <p>{props.currentPnj.race}</p>
+
         <h3>About</h3>
         <p>{props.currentPnj.description}</p>
         <h3>Favourite quote</h3>
