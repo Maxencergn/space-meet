@@ -3,6 +3,7 @@ import './App.css';
 import ProfilMassEffect from './components/ProfilMassEffect';
 import Signup from './components/Signup';
 import ProfilUser from './components/ProfilUser';
+import ProfilEdit from './components/ProfilEdit';
 import LoadingPage from './components/LoadingPage';
 import Navbar from './components/Navbar';
 import Chat from './components/Chat';
@@ -37,6 +38,9 @@ function App() {
             <Route exact path='/ProfilUser'>
               <Navbar />
               <ProfilUser />
+            </Route>
+            <Route exact path='/ProfilEdit'>
+              <ProfilEdit />
             </Route>
             <Route exact path='/match'>
               <Navbar />
