@@ -1,5 +1,6 @@
 import './ProfilMassEffect.css';
 import marker from '../img/marker.png';
+import leftArrow from '../img/left-arrow.png';
 
 const character = {
   characterId: 3,
@@ -18,14 +19,19 @@ function ProfilMassEffect() {
   return (
     <div className="profil-masseffect">
       <div className="container-img-profil">
+        <img className="img-left-arrow" alt="" src={leftArrow} />
         <img className="img-profil-ME" src={character.img} alt="img" />
       </div>
       <div className="infos-container">
-        <h2>{character.name}, {character.race}</h2>
+        <h1>{character.name}</h1>
         <p><img className="marker-img" alt="" src={marker}/>Asari Planet</p>
+        <hr width="90%" align="center"></hr>
+        <p>{character.race}</p>
         <p>{character.class}</p>
-        <h2>About</h2>
+        <h3>About</h3>
         <p>{character.description}</p>
+        <h3>Favourite quote</h3>
+        <p style={{fontStyle: "italic"}}>" {character.quote} "</p>
       </div>
     </div>
   )
