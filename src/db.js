@@ -14,6 +14,7 @@ const db = {
         'The player must accept a military specialization, which determines a set of talents. The six classes are Soldier, Engineer, Adept, Infiltrator, Sentinel, and Vanguard. The class choice will also affect weapon proficiency – if Shepard is not proficient with a weapon, the Commander can still fire it, but cannot zoom in with it, and many weapon bonuses are void. This applies to all weapons except the pistol, which all classes are proficient in.',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 32,
       like: 0,
     },
     {
@@ -29,6 +30,7 @@ const db = {
       class: 'Soldier',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 27,
       like: 0,
     },
     {
@@ -44,6 +46,7 @@ const db = {
       class: 'Turian Agent',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 29,
       like: 0,
     },
     {
@@ -59,6 +62,7 @@ const db = {
       class: 'Sentinel',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 34,
       like: 0,
     },
     {
@@ -74,6 +78,7 @@ const db = {
       class: 'Asari Scientist',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 106,
       like: 0,
     },
     {
@@ -89,6 +94,7 @@ const db = {
       class: 'Quarian Machinist',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 37,
       like: 0,
     },
     {
@@ -104,6 +110,7 @@ const db = {
       class: 'Krogan Battlemaster',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
+      age: 1052,
       like: 0,
     },
     {
@@ -118,6 +125,7 @@ const db = {
       class: 'Krogan Berserker',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
+      age: 927,
       like: 0,
     },
     {
@@ -133,6 +141,7 @@ const db = {
       class: 'Subject Zero',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 24,
       like: 0,
     },
     {
@@ -147,6 +156,7 @@ const db = {
       class: 'Cerberus Operative',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 28,
       like: 0,
     },
     {
@@ -162,6 +172,7 @@ const db = {
       class: 'Master Thief',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
+      age: 25,
       like: 0,
     },
     {
@@ -176,6 +187,7 @@ const db = {
       class: 'Geth Infiltrator',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
+      age: 'unknown',
       like: 0,
     },
     {
@@ -191,6 +203,7 @@ const db = {
       class: 'Cerberus Officer',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 35,
       like: 0,
     },
     {
@@ -205,6 +218,7 @@ const db = {
       class: 'Salarian Scientist',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
+      age: 35,
       like: 0,
     },
     {
@@ -220,6 +234,7 @@ const db = {
       class: 'Asari Justicar',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 1000,
       like: 0,
     },
     {
@@ -235,6 +250,7 @@ const db = {
       class: 'Drell Assassin',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 39,
       like: 0,
     },
     {
@@ -249,6 +265,7 @@ const db = {
       class: 'Mercenary Veteran',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
+      age: 70,
       like: 0,
     },
     {
@@ -263,6 +280,7 @@ const db = {
       class: 'Unshackled AI',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
+      age: 'unknown',
       like: 0,
     },
     {
@@ -277,6 +295,7 @@ const db = {
       class: 'Arms Master',
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 27,
       like: 0,
     },
     {
@@ -292,6 +311,7 @@ const db = {
       class: 'Vengeful Ancient',
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 50186,
       like: 0,
     },
     {
@@ -306,6 +326,7 @@ const db = {
       class: 'Soldier',
       appearance: ['Mass Effect'],
       isRomanceable: false,
+      age: 29,
       like: 0,
     },
     {
@@ -321,6 +342,7 @@ const db = {
       class: 'Turian Huntress',
       appearance: ['Mass Effect 3'],
       isRomanceable: false,
+      age: 22,
       like: 0,
     },
     {
@@ -335,6 +357,7 @@ const db = {
         "Captain David Edward Anderson is a human war hero and the original captain of the SSV Normandy. Anderson was born on June 8, 2137 to Ursula and Paul Anderson, a nurse and flight mechanic respectively, in the city of London on Earth, and was the last of three children by his parents' second marriage. Anderson is one of the Alliance's most decorated special forces operatives, and the first to graduate from the N7 marine program at Arcturus Station, serving with honor in the First Contact War.",
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 48,
       like: 0,
     },
     {
@@ -349,6 +372,7 @@ const db = {
         "Major Dr. Karin Chakwas is the human doctor of the SSV Normandy. She enlisted in the Alliance soon after she graduated from medical school, seeking 'exotic adventure', though she quickly realized that military life was not as romantic as she had imagined it to be. However, she stayed with the Alliance in order to do her duty and serve humanity. Though she sometimes considers starting her own private practice, or going to work at a medical center on one of the colonies, she feels that 'there is something special about working on soldiers', and believes she would be abandoning them if she did not stay. Like most Alliance doctors, she has taken courses in alien biology, enabling her to treat the non-human crew members, particularly Liara and Garrus. Commander Shepard can replenish the squad's medi-gel stocks from the infirmary where she is usually working.",
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 41,
       like: 0,
     },
     {
@@ -363,6 +387,7 @@ const db = {
         "Flight Lieutenant Jeff 'Joker' Moreau is the pilot of the SSV Normandy. Joker is an excellent pilot and confident to the point of arrogance, wasting no time in pointing out his prowess to others. He's quick to ensure everyone knows his many accomplishments and commendations were all earned, and not due to charity for his medical problems..",
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 29,
       like: 0,
     },
     {
@@ -376,6 +401,7 @@ const db = {
         "Ambassador Donnel Udina is a human diplomat stationed at the Citadel. He is humanity's most recent ambassador to the Council races (the first was Anita Goyle) and is determined to advance human interests wherever possible. Udina is mistrustful or at least apprehensive of Commander Shepard, particularly after the Commander's induction into the Spectres. Udina often requires solid, irrefutable proof of anything before acting, a trait which often conflicts with Shepard's goals. Udina plays the political game, refusing to rock the boat if it might endanger his standing—and therefore humanity's—with the Citadel Council.",
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 49,
       like: 0,
     },
     {
@@ -389,6 +415,7 @@ const db = {
         "Aria T'Loak is the de facto ruler of Omega, the nominal capital of the Terminus Systems. Also known as the 'Pirate Queen' of Omega, Aria is fiercely possessive of the space station and will do anything to protect it and maintain her dominance.",
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 1000,
       like: 0,
     },
     {
@@ -402,6 +429,7 @@ const db = {
         "The Enhanced Defense Intelligence, or EDI (pronounced 'Ee-Dee' [ˈiːdiː]), is an AI created by Cerberus and installed aboard the Normandy SR-2. She is represented visually by a holographic blue sphere and aurally with a feminine voice at various terminals throughout the ship where she can provide basic information about the Normandy and Cerberus.",
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 'unknown',
       like: 0,
     },
     {
@@ -416,6 +444,7 @@ const db = {
         "The Illusive Man is the elusive, secretive, and well informed leader of Cerberus. He has close-cropped silver-grey hair with 'steely blue' eyes which appear to be prosthetic. The Illusive Man's real name and his life before Cerberus are both long forgotten by most. For years, the Illusive Man has been using Cerberus and his immense network of contacts to achieve his goal - that of making humanity ascendant above all other races. He is described as having the best and worst traits of humanity rolled into one man.",
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 45,
       like: 0,
     },
     {
@@ -429,6 +458,7 @@ const db = {
         "Kelly Chambers is Commander Shepard's yeoman on the Normandy SR-2 in 2185. In addition to her duties as yeoman, she is also a psychologist and will offer insight into each new addition to the squad. She is a potential romance partner for either a male or female Shepard.",
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 27,
       like: 0,
     },
     {
@@ -442,6 +472,7 @@ const db = {
         "Diana Allers is a human Alliance News Network war correspondent and regular on the Alliance News Network's 'Battlespace'. She is originally from Milgrom, Bekenstein, and considers herself a 'colony kid'.",
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 28,
       like: 0,
     },
     {
@@ -456,6 +487,7 @@ const db = {
         'Armando-Owen Bailey is a human C-Sec officer stationed in the Zakera Ward of the Citadel in 2185 and early 2186.',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 40,
       like: 0,
     },
     {
@@ -469,6 +501,7 @@ const db = {
         'Lieutenant Steve Cortez is an Alliance pilot aboard the Normandy SR-2 in 2186, where he pilots the UT-47A Kodiak that transports Commander Shepard and squad to mission locations.',
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 38,
       like: 0,
     },
     {
@@ -483,6 +516,7 @@ const db = {
         "Gabriella 'Gabby' Daniels is a former Alliance engineer. She is a Cerberus operative in the Lazarus Cell and an engineer aboard the Normandy SR-2 in 2185. Gabby is more serious and formal than her fellow engineer and best friend Kenneth Donnelly, often preferring to go straight to the point while her partner takes time to explain everything.",
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 25,
       like: 0,
     },
     {
@@ -497,6 +531,7 @@ const db = {
         'Kenneth Donnelly is a former Alliance engineer. He is a Cerberus operative in the Lazarus Cell and an engineer aboard the Normandy SR-2 in 2185.',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 32,
       like: 0,
     },
     {
@@ -510,6 +545,7 @@ const db = {
         "Eve, as named by Mordin Solus or Padok Wiks, also known as Urdnot Bakara, is a female krogan shaman. Eve is the only survivor of Maelon's experiments on Tuchanka in 2185 to cure the genophage. She, along with a number of other female krogan, were recovered by the salarian Special Tasks Group after it was shut down and transferred to Sur'Kesh.",
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 427,
       like: 0,
     },
     {
@@ -524,6 +560,7 @@ const db = {
         'Admiral Steven Hackett is a top-ranking official of the Alliance Navy and commanding officer of the Fifth Fleet. He is based at Arcturus Station.',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 62,
       like: 0,
     },
     {
@@ -538,6 +575,7 @@ const db = {
         'Specialist Samantha Traynor is the Comm Specialist aboard the Alliance Normandy SR-2, serving in a similar role to that of her predecessor, Yeoman Kelly Chambers.',
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 30,
       like: 0,
     },
     {
@@ -552,6 +590,7 @@ const db = {
         "Urdnot Wreav is Wrex's broodbrother, both of them having shared the same mother but born a decade apart. He becomes the leader of Clan Urdnot if Wrex dies on Virmire. He is more traditional than Wrex, placing the importance on his own clan over the krogan race as a whole.",
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 1300,
       like: 0,
     },
     {
@@ -565,6 +604,7 @@ const db = {
         "Saren Arterius, born 2139, is the longest serving turian member of the Spectres, the elite operatives answering directly to the Citadel Council. For 24 years, he has been an agent of the Council's will, a zealous defender of galactic stability in the unsettled border region of the Skyllian Verge.",
       appearance: ['Mass Effect'],
       isRomanceable: true,
+      age: 44,
       like: 0,
     },
     {
@@ -579,6 +619,7 @@ const db = {
         "Matriarch Benezia is a very powerful asari biotic and spiritual leader among her people. She is also Liara T'Soni's mother, though the two have not spoken in years. When the evidence that proved Saren Arterius was responsible for the Eden Prime attack also proved Benezia was working alongside him, it surprised those who knew her, as Benezia's actions seemed to be completely out of character.",
       appearance: ['Mass Effect'],
       isRomanceable: true,
+      age: 845,
       like: 0,
     },
     {
@@ -593,6 +634,7 @@ const db = {
         "Sovereign is the flagship of the rogue Spectre Saren Arterius. An enormous dreadnought larger than any other ship in any known fleet, Sovereign is crewed with both geth and krogan. At two kilometers long, its spinal-mounted main gun is likely capable of penetrating another dreadnought's kinetic barriers with a single shot. The prevailing opinion is that Sovereign is a geth construct, while others believe it is a Prothean relic. Its design, however, hints at a more alien and mysterious origin. The attack on Eden Prime demonstrated Sovereign's ability to generate mass effect fields powerful enough to land on a planetary surface. This implies it has a massive element zero core, and the ability to generate staggering amounts of power..",
       appearance: ['Mass Effect'],
       isRomanceable: true,
+      age: 'unknown',
       like: 0,
     },
     {
@@ -606,6 +648,7 @@ const db = {
         "The Collector General was a unique Collector who controlled the rest of the Collectors from the Collector Base. Like all Collectors, the General was a victim of Harbinger's indoctrination up until its death at the hands of Shepard and the Commander's squad.",
       appearance: ['Mass Effect 2'],
       isRomanceable: true,
+      age: 21,
       like: 0,
     },
     {
@@ -620,6 +663,7 @@ const db = {
         "Harbinger is a Reaper who resides in dark space with the rest of the Reaper fleet. It is the overseer of the Collectors' operations, frequently possessing individual Collectors to fight battles personally. Harbinger's involvement first began two months after the Battle of the Citadel, when it made a deal with the Shadow Broker to gain possession of Commander Shepard's body following the destruction of the SSV Normandy. This did not succeed, however, and Shepard would go on to be resurrected by the Lazarus Project while Harbinger advanced its sinister plans for the galaxy.",
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 'unknown',
       like: 0,
     },
     {
@@ -633,6 +677,7 @@ const db = {
         'The Shadow Broker is an enigmatic figure at the head of an expansive organization which trades in information, always selling to the highest bidder. The Shadow Broker appears to be highly competent at its trade: all secrets that are bought and sold never allow one customer of the Broker to gain a significant advantage, forcing the customers to continue trading information to avoid becoming disadvantaged, allowing the Broker to remain in business.',
       appearance: ['Mass Effect 2'],
       isRomanceable: true,
+      age: 48,
       like: 0,
     },
     {
@@ -646,6 +691,7 @@ const db = {
         "Maya Brooks is a former Cerberus operative who left the organization to pursue her own pro-human agenda. Her true name is unknown; 'Maya Brooks' is an admitted alias, and she has used at least three other names while working with Cerberus: 'Captain Channing', 'Hope Lilium', and 'Rasa'. Accomplished at infiltration and espionage, Brooks specializes in throwing numerous distractions at her adversaries while she stealthily completes her objectives.",
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 32,
       like: 0,
     },
     {
@@ -660,6 +706,7 @@ const db = {
         'The Catalyst, also known as the Intelligence, is an ancient artificial intelligence that resides within the Citadel. It embodies the collective consciousness and memories of the Reapers, and thus countless ancient civilizations. Before being encountered by Commander Shepard, the Catalyst was believed to be the final component necessary to complete the Crucible, and was mistakenly thought to be the Citadel itself.',
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 'unknown',
       like: 0,
     },
     {
@@ -674,6 +721,7 @@ const db = {
         "In 2186, during the Reaper invasion, the Illusive Man appears via hologram on Mars before Shepard and Liara, who were on Mars in search of a Prothean superweapon. He began criticizing the Alliance for squandering their precious time researching the Prothean Archives and reveals his intention to use the information to devise a way to dominate the Reapers and use their advanced technology for humanity's benefit.",
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 47,
       like: 0,
     },
     {
@@ -687,6 +735,7 @@ const db = {
         'Kai Leng is an assassin working for the human-survivalist organization Cerberus. Leng was formerly a lieutenant and N7 marine in the Systems Alliance known for having anti-alien attitudes. He is described as being Earth-born with features that show his dominant Chinese heritage.',
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 22,
       like: 0,
     },
     {
@@ -700,6 +749,7 @@ const db = {
         "Henry Lawson is the father of Miranda Lawson and her genetic twin, Oriana. Lawson is a powerful businessman who was obsessed with securing a way to make his mark on history - namely, by creating a 'genetic dynasty'. Rather than have a normal family, Henry took his own DNA and doubled his X chromosome to create a daughter, Miranda, whom he ensured would have 'desirable traits.' Miranda was not the first offspring engineered in such a way, but she was the first one Henry kept.",
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 33,
       like: 0,
     },
     {
@@ -714,6 +764,7 @@ const db = {
         "The Mysterious Figure is an individual who hires a mercenary group to assassinate Commander Shepard whilst the Normandy crew is docked on the Citadel for shore leave in 2186. This person takes a particular interest in stealing Shepard's identity, and hides behind voice and visual disguisers to protect theirs.",
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 'unknown',
       like: 0,
     },
     {
@@ -728,6 +779,7 @@ const db = {
         "Oleg Petrovsky is a Cerberus general. He is an experienced and formidable military strategist, as well as a classical scholar with a deep knowledge of military history. Viewing the path that humanity is taking and the looming danger of the Reapers in that context, Petrovsky is concerned about humanity's future and strongly supportive of Cerberus' plans.",
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
+      age: 52,
       like: 0,
     },
     {
@@ -742,6 +794,7 @@ const db = {
         "Udina's desperation leads him to a deal with Cerberus to instigate a bloodless coup of the Citadel, arrest the Council and force them to grant him the emergency power necessary to order all Citadel forces to Earth.",
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
+      age: 32,
       like: 0,
     },
   ],

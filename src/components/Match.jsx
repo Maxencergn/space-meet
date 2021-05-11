@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import db from '../db';
 import './Match.css';
 import MatchNoMore from './MatchNoMore';
@@ -52,7 +53,7 @@ const Match = ({ setCurrentPnj, currentPnj }) => {
   };
 
   return (
-    <div>
+    <div className='div-match'>
       {!filteredCharacters.length && <MatchNoMore />}
       {filteredCharacters.length
         ? filteredCharacters.map(
