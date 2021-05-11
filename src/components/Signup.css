@@ -24,6 +24,29 @@
   margin: auto;
   display: flex;
   justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.pictureUp {
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(143, 218, 73),
+    rgb(39, 155, 35)
+  );
+  width: 280px;
+  height: 60px;
+  border-radius: 10px;
+  outline: none;
+  cursor: pointer;
+  font-size: 25px;
+  border: 0;
+  color: white;
+  font-family: 'Varela Round', sans-serif;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 20px;
 }
 
@@ -38,6 +61,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.pseudoContainer {
+  font-size: 20px;
 }
 
 .pseudoContainer,
