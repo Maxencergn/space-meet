@@ -32,9 +32,13 @@
 
 .infos {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
+
+.pseudoContainer {
+  font-size: 20px;
+
 
 .pseudoContainer,
 .birthdayContainer,
@@ -45,6 +49,7 @@
     font-size: 20px;
     width: 100%;
     margin: 20px 0;
+
 }
 
 .input-pseudo,
@@ -68,6 +73,11 @@
 }
 
 .form-group {
+
+  display: flex;
+  margin: 50px;
+  padding: 15px;
+
     display: flex;
     margin: 20px auto;
     padding: 15px;
@@ -91,4 +101,5 @@
   border: 0;
   color: white;
   font-family: 'Varela Round', sans-serif;
+
 }

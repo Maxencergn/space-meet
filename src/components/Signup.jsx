@@ -31,22 +31,6 @@ function Signup(props) {
     localStorage.setItem('gender', gender);
   };
 
-  const handleChangePseudo = (event) => {
-    setPseudo(event.target.value);
-  };
-  const handleChangeBirthday = (event) => {
-    setBirthday(event.target.value);
-  };
-  const handleChangeEmail = (event) => {
-    setEmail(event.target.value);
-  };
-  const handleChangeRace = (event) => {
-    setRace(event.target.value);
-  };
-  const handleGender = (event) => {
-    setGender(event.target.value);
-  };
-
   return (
     <div className='ProfileCreation'>
       <h1 className='spacemeet'>Sign-up</h1>
@@ -62,7 +46,7 @@ function Signup(props) {
               name='pseudo'
               id='pseudo'
               placeholder='Pseudo'
-              onChange={handleChangePseudo}
+              onChange={(event) => setPseudo(event.target.value)}
               value={pseudo}
             />
           </label>
@@ -75,7 +59,7 @@ function Signup(props) {
               type='date'
               name='birthday'
               id='birthday'
-              onChange={handleChangeBirthday}
+              onChange={(event) => setBirthday(event.target.value)}
               value={birthday}
             />
           </label>
@@ -87,7 +71,7 @@ function Signup(props) {
               type='text'
               name='race'
               id='race'
-              onChange={handleChangeRace}
+              onChange={(event) => setRace(event.target.value)}
               value={race}
             >
               <option value='Human'>Human</option>
@@ -114,7 +98,7 @@ function Signup(props) {
               name='email'
               id='email'
               placeholder='spacemeet@mail.com'
-              onChange={handleChangeEmail}
+              onChange={(event) => setEmail(event.target.value)}
               value={email}
             />
           </label>
