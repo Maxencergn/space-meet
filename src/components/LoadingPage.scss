@@ -1,5 +1,6 @@
 $dark-grey: #69707c;
-$orange: #1e5d81;
+$orange: rgb(253, 69, 133);
+$second: rgb(255, 164, 141);
 
 @keyframes rotate{
   from{ transform: translate(-50%, -50%) rotate(0); }
@@ -42,7 +43,7 @@ $orange: #1e5d81;
     bottom: 10%;
     left: 30%;
     position: absolute;
-    background-color: $dark-grey;
+    background-image: linear-gradient(to bottom right, rgb(255, 164, 141), rgb(253, 69, 133));
     border: 0;
     color: white;
     font-family: 'Varela Round', sans-serif;
@@ -68,7 +69,7 @@ $orange: #1e5d81;
       animation: rotate 3.5s ease-in-out infinite;
       border-top: 1px solid transparent;
       border-left: 2px solid $orange;
-      border-right: 2px solid $orange;
+      border-right: 2px solid $second;
       border-bottom: 1px solid transparent;
       border-radius: 50%;
       position: absolute;
