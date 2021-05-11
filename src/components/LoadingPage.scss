@@ -47,6 +47,14 @@ $orange: #1e5d81;
     color: white;
     font-family: 'Varela Round', sans-serif;
   }
+  
+  &__img {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: 38%;
+    left: 39%;
+  }
 
   &__circle {
     width: 100%;
