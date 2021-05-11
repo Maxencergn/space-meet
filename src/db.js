@@ -5,7 +5,7 @@ const db = {
       name: 'Commander Shepard',
       gender: 'Male',
       race: 'Human',
-      img: 'https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:good%2Cw_700/MTc2MjQ3NjgxNzYzNjQ5NDE1/mass-effect-the-commander-sheppard-workout-at-rich-mans-gym.webp',
+      img: 'https://th.bing.com/th/id/OIP.CeL6Oku_TUtZeKvsdWsrQgHaJZ?pid=ImgDet&rs=1',
       quote:
         "You're not even alive. Not really. You're just a machine. And machines can be broken!",
       description:
@@ -20,7 +20,7 @@ const db = {
       name: 'Ashley Williams',
       gender: 'Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/3/3c/Ashley_Character_Box.png/revision/latest/scale-to-width-down/650?cb=20100105103946',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/3/3c/Ashley_Character_Box.png',
       quote:
         "Why is it that whenever someone says 'with all due respect' they really mean 'kiss my ass'?",
       description:
@@ -34,7 +34,7 @@ const db = {
       name: 'Garrus Vakarian',
       gender: 'Male',
       race: 'Turian',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/3/36/Garrus_Character_Shot.png/revision/latest/scale-to-width-down/465?cb=20100323054855',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/3/36/Garrus_Character_Shot.png',
       quote:
         'You realize this plan has me walking into hell, too. Hah. Just like old times.',
       description:
@@ -48,7 +48,7 @@ const db = {
       name: 'Kaidan Alenko',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/1/19/Kaidan_Character_Box.png/revision/latest/scale-to-width-down/650?cb=20100117113836',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/1/19/Kaidan_Character_Box.png',
       quote:
         "We finally get out here, and the final frontier was already settled. And the residents don't even seem impressed by the view. Or the dangers.",
       description:
@@ -62,7 +62,7 @@ const db = {
       name: "Liara T'Soni",
       gender: 'Feminine',
       race: 'Asari',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/2/2e/Liara_Character_Box.png/revision/latest/scale-to-width-down/532?cb=20100610185903',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/2/2e/Liara_Character_Box.png',
       quote:
         'That is why I find you so fascinating. You were marked by the beacon on Eden Prime; you were touched by working Prothean technology!',
       description:
@@ -76,7 +76,7 @@ const db = {
       name: "Tali'Zorah nar Rayya",
       gender: 'Female',
       race: 'Quarian',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/2/2f/Talicharactershotme2.jpg/revision/latest/scale-to-width-down/400?cb=20100106125310',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/2/2f/Talicharactershotme2.jpg',
       quote:
         'The Pilgrimage proves we are willing to give of ourselves for the greater good. What does it say about me if I turn my back on this?',
       description:
@@ -90,7 +90,7 @@ const db = {
       name: 'Urdnot Wrex',
       gender: 'Male',
       race: 'Krogan',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/4/4e/Wrex_Character_Box.png/revision/latest/scale-to-width-down/650?cb=20100610185439',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/4/4e/Wrex_Character_Box.png',
       quote:
         "Anyone who fights us is either stupid or on Saren's payroll. Killing the latter is business. Killing the former is a favor to the universe.",
       description:
@@ -104,7 +104,7 @@ const db = {
       name: 'Grunt',
       gender: 'Male',
       race: 'Krogan',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/1/1d/Grunt_Character_Box.png/revision/latest/scale-to-width-down/1000?cb=20100419163626',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/1/1d/Grunt_Character_Box.png',
       quote: 'I am pure krogan; you should be in awe.',
       description:
         'Grunt is a genetically engineered krogan super soldier. Bred and educated in a tank, he was intended to exemplify the best traits of the krogan, and help reinvigorate his species. In the meantime, he fights alongside Commander Shepard to satisfy his natural desire for violence.',
@@ -117,7 +117,7 @@ const db = {
       name: 'Jack',
       gender: 'Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/4/45/Subject_Zero_Character_Box.png/revision/latest/scale-to-width-down/958?cb=20100411062036',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/4/45/Subject_Zero_Character_Box.png',
       quote:
         "Turns out, mess with someone's head enough, you can turn a scared little kid into an all-powerful bitch.",
       description:
@@ -131,7 +131,7 @@ const db = {
       name: 'Jacob Taylor',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/c/cd/Jacob_Character_Box.png/revision/latest/scale-to-width-down/884?cb=20100413192804',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/c/cd/Jacob_Character_Box.png',
       quote: 'So much for peace.',
       description:
         "Jacob Taylor is a human biotic and a former Alliance Marine under the command of Major Derek Izunami. He resigned after surviving the geth attack on Eden Prime. He is also part of Commander Shepard's squad during the suicide mission. Jacob is a highly experienced fighter, and is skilled in the use of weapons and biotics. He works professionally alongside Miranda Lawson, who functions as his informant and later as his superior officer. Jacob is also a potential romance option for a female Shepard.",
@@ -144,7 +144,7 @@ const db = {
       name: 'Kasumi Goto',
       gender: 'Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/1/10/Kasumi_Character_Shot.png/revision/latest/scale-to-width-down/800?cb=20100412023807',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/1/10/Kasumi_Character_Shot.png',
       quote:
         "I'm the best thief in the business, not the most famous. Need to watch my step to keep it that way.",
       description:
@@ -156,9 +156,9 @@ const db = {
     {
       characterId: 11,
       name: 'Legion',
-      gender: 'A.I.',
+      gender: 'Artificial Intelligence.',
       race: 'Geth',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/2/25/Legion.png/revision/latest/scale-to-width-down/1000?cb=20100609224748',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/2/25/Legion.png',
       quote: 'Organics fear us. We wish to understand, not incite.',
       description:
         "Legion is the name taken by the gestalt consciousness formed by 1,183 geth programs inhabiting a unique geth 'mobile platform'.",
@@ -171,7 +171,7 @@ const db = {
       name: 'Miranda Lawson',
       gender: 'Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/a/ac/Miranda_Character_Box.png/revision/latest/scale-to-width-down/802?cb=20100427194235',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/a/ac/Miranda_Character_Box.png',
       quote:
         "I'm an excellent judge of character. I think you'll find my assessments to be right on the money.",
       description:
@@ -185,7 +185,7 @@ const db = {
       name: 'Mordin Solus',
       gender: 'Male',
       race: 'Salarian',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/6/67/Mordin_Character_Box.png/revision/latest/scale-to-width-down/650?cb=20100117114930',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/6/67/Mordin_Character_Box.png',
       quote: 'Had to be me. Someone else might have gotten it wrong.',
       description:
         'Mordin Solus is a salarian geneticist, professor, and a former operative of the Special Tasks Group, where he performed reconnaissance and participated in the modification of the genophage. In 2185, he is recruited by Commander Shepard to assist in a high-risk mission against the Collectors. Mordin has a moral character best described as consequentialist, believing the ends justify the means, though he dislikes taking life without good cause. His actions are often guided by an impersonal logic, refusing to let his conscience, personal, and emotional connections cloud his judgment of what he believes is truly best in the big picture. Though he is affable, quick-talking and friendly, Mordin bears physical scars of his time in the STG and is still handling the consequences of his past.',
@@ -198,7 +198,7 @@ const db = {
       name: 'Samara',
       gender: 'Feminine',
       race: 'Asari',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/9/93/Samara_Character_Box.png/revision/latest/scale-to-width-down/1000?cb=20110515165629',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/9/93/Samara_Character_Box.png',
       quote:
         'By the code, I will serve you, Shepard. Your choices are my choices. Your morals are my morals. Your wishes are my code.',
       description:
@@ -212,7 +212,7 @@ const db = {
       name: 'Thane Krios',
       gender: 'Male',
       race: 'Drell',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/8/81/Thane_Character_Box.png/revision/latest/scale-to-width-down/650?cb=20100607192605',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/8/81/Thane_Character_Box.png',
       quote:
         'The measure of an individual can be difficult to discern by actions alone.',
       description:
@@ -226,7 +226,7 @@ const db = {
       name: 'Zaeed Massani',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/8/8d/Zaeed_Character_Box.png/revision/latest/scale-to-width-down/532?cb=20100120013448',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/8/8d/Zaeed_Character_Box.png',
       quote: 'Rage is a hell of an anesthetic.',
       description:
         'Zaeed Massani is a feared, respected bounty hunter and mercenary soldier. Cerberus has contracted Zaeed to assist Commander Shepard in the mission to save mankind. In exchange, Zaeed requires help to complete another mission he had accepted beforehand, which is to liberate an Eldfell-Ashland Energy refinery from Blue Suns control.',
@@ -239,7 +239,7 @@ const db = {
       name: 'EDI',
       gender: 'Feminine Programming',
       race: 'A.I.',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/8/88/Edi-robot-body-me3.png/revision/latest?cb=20120311035716',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/8/88/Edi-robot-body-me3.png',
       quote: 'I always work at optimal capacity.',
       description:
         "Following Shepard's defection from Cerberus, EDI aided the crew in eluding the Illusive Man by blocking his technicians' attempts to track the ship. When the Normandy SR-2 is placed in the Alliance's possession, EDI pretended to be a simple VI to hide her true nature out of concerns that Alliance engineers would attempt to remove her. She established the fiction that she would only respond to Joker's commands, so they often brought him on board under guard. When Earth was invaded, she hacked the docking clamps and escaped with Joker.",
@@ -252,7 +252,7 @@ const db = {
       name: 'James Vega',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/9/94/James_Vega_Character_Box.png/revision/latest/scale-to-width-down/746?cb=20120320180636',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/9/94/James_Vega_Character_Box.png',
       quote: "Adrenaline's better than oxygen any day.",
       description:
         "Lieutenant James Vega is a human Systems Alliance Marine and a member of Commander Shepard's squad in 2186. While Vega is an experienced soldier, he is unfamiliar with the seedy underbelly and political workings of the galaxy.",
@@ -265,7 +265,7 @@ const db = {
       name: 'Javik',
       gender: 'Male',
       race: 'Prothean',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/9/90/Javik_face_charbox_shot.png/revision/latest/scale-to-width-down/1000?cb=20131002122707',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/9/90/Javik_face_charbox_shot.png',
       quote:
         'Stand amongst the ashes of a trillion dead souls, and ask the ghosts if honor matters. The silence is your answer.',
       description:
@@ -279,7 +279,7 @@ const db = {
       name: 'Richard L. Jenkins',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/9/9b/Jenkins_ME_charshot.png/revision/latest/scale-to-width-down/1000?cb=20140908181417',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/9/9b/Jenkins_ME_charshot.png',
       quote: 'That was awesome!',
       description:
         "Corporal Richard L. Jenkins is an Alliance Marine under the command of Captain Anderson, and a member of the SSV Normandy's crew. Jenkins was born in a rural district of Eden Prime, and dreamed of visiting more urban areas before he decided to become a Marine, stating that 'even paradise gets boring.' After enlisting, he wanted to prove himself as a notable soldier and test himself in combat. Jenkins envies Commander Shepard's impressive record. He also admires the Spectres, though his views of them seem to be coloured more by vids than by experience. He is especially impressed by Nihlus Kryik, after hearing the story that Nihlus once defeated an entire platoon single-handed.",
@@ -292,7 +292,7 @@ const db = {
       name: 'Nyreen Kandros',
       gender: 'Female',
       race: 'Turian',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/f/f0/NyreenHoodless.png/revision/latest/scale-to-width-down/1000?cb=20121209010358',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/f/f0/NyreenHoodless.png',
       quote:
         "Whatever you're here for, the answer is no. Kindly escort yourselves off Talon territory.",
       description:
@@ -306,7 +306,7 @@ const db = {
       name: 'David Anderson',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/3/33/Anderson_Character_Box.png/revision/latest/scale-to-width-down/367?cb=20100323062145',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/3/33/Anderson_Character_Box.png',
       quote:
         'I know Saren. I know his reputation, his politics. He believes humans are a blight on the galaxy. This attack was an act of war.',
       description:
@@ -319,7 +319,7 @@ const db = {
       name: 'Dr. Chakwas',
       gender: 'Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/c/c0/Chakwas_ME_charbox.png/revision/latest/scale-to-width-down/1000?cb=20140409103004',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/c/c0/Chakwas_ME_charbox.png',
       quote:
         "Maybe it's less about leaving and more about staying. As a military doctor, I mostly treat people who are in bad shape. Often they die. And if I *can* help them, they move on. Either way, they leave.",
       description:
@@ -332,7 +332,7 @@ const db = {
       name: "Jeff 'Joker' Moreau",
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/a/a6/Joker_Character_Box.png/revision/latest/scale-to-width-down/908?cb=20100909055250',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/a/a6/Joker_Character_Box.png',
       quote:
         'I’m not good. I’m not even great. I’m the best damn helmsman in the Alliance fleet.',
       description:
@@ -345,7 +345,7 @@ const db = {
       name: 'Donnel Udina',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/5/54/Udinacharactershot.png/revision/latest/scale-to-width-down/500?cb=20091023213045',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/5/54/Udinacharactershot.png',
       quote: 'The galaxy needs leadership. Real leadership.',
       description:
         "Ambassador Donnel Udina is a human diplomat stationed at the Citadel. He is humanity's most recent ambassador to the Council races (the first was Anita Goyle) and is determined to advance human interests wherever possible. Udina is mistrustful or at least apprehensive of Commander Shepard, particularly after the Commander's induction into the Spectres. Udina often requires solid, irrefutable proof of anything before acting, a trait which often conflicts with Shepard's goals. Udina plays the political game, refusing to rock the boat if it might endanger his standing—and therefore humanity's—with the Citadel Council.",
@@ -357,7 +357,7 @@ const db = {
       name: "Aria T'Loak",
       gender: 'Feminine',
       race: 'Asari',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/9/90/Aria_ME2_charshot.png/revision/latest/scale-to-width-down/1000?cb=20140625104530',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/9/90/Aria_ME2_charshot.png',
       quote: 'I am Omega.',
       description:
         "Aria T'Loak is the de facto ruler of Omega, the nominal capital of the Terminus Systems. Also known as the 'Pirate Queen' of Omega, Aria is fiercely possessive of the space station and will do anything to protect it and maintain her dominance.",
@@ -369,7 +369,7 @@ const db = {
       name: 'EDI',
       gender: 'Feminine Programming',
       race: 'A.I.',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/c/cc/EDI_Character_Box.png/revision/latest/scale-to-width-down/525?cb=20100802022514',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/c/cc/EDI_Character_Box.png',
       quote: 'I always work at optimal capacity.',
       description:
         "The Enhanced Defense Intelligence, or EDI (pronounced 'Ee-Dee' [ˈiːdiː]), is an AI created by Cerberus and installed aboard the Normandy SR-2. She is represented visually by a holographic blue sphere and aurally with a feminine voice at various terminals throughout the ship where she can provide basic information about the Normandy and Cerberus.",
@@ -381,7 +381,7 @@ const db = {
       name: 'The Illusive Man',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/7/7a/Illusive_Man.png/revision/latest/scale-to-width-down/700?cb=20100111063515',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/7/7a/Illusive_Man.png',
       quote:
         'Salvation comes with a cost. Judge us not by our methods, but by what we seek to accomplish.',
       description:
@@ -394,7 +394,7 @@ const db = {
       name: 'Kelly Chambers',
       gender: 'Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/4/42/Kelly_ME2_boxshot.png/revision/latest/scale-to-width-down/1000?cb=20130401141937',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/4/42/Kelly_ME2_boxshot.png',
       quote: 'Character matters, not race or gender.',
       description:
         "Kelly Chambers is Commander Shepard's yeoman on the Normandy SR-2 in 2185. In addition to her duties as yeoman, she is also a psychologist and will offer insight into each new addition to the squad. She is a potential romance partner for either a male or female Shepard.",
@@ -406,7 +406,7 @@ const db = {
       name: 'Diana Allers',
       gender: 'Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/f/f8/ME3_Diana_Allers.png/revision/latest/scale-to-width-down/580?cb=20120321185012',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/f/f8/ME3_Diana_Allers.png',
       quote: "Well, I can't refuse an exclusive.",
       description:
         "Diana Allers is a human Alliance News Network war correspondent and regular on the Alliance News Network's 'Battlespace'. She is originally from Milgrom, Bekenstein, and considers herself a 'colony kid'.",
@@ -418,7 +418,7 @@ const db = {
       name: 'Armando-Owen Bailey',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/6/6f/Captain_Bailey_ME2.png/revision/latest/scale-to-width-down/400?cb=20091211112318',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/6/6f/Captain_Bailey_ME2.png',
       quote:
         "You'll have to make him scream a little. He's not going to tell you everything just 'cause you ask.",
       description:
@@ -431,7 +431,7 @@ const db = {
       name: 'Steve Cortez',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/9/99/ME3_Steven_Cortez.png/revision/latest/scale-to-width-down/740?cb=20120321204454',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/9/99/ME3_Steven_Cortez.png',
       quote: "When I'm in that pilot seat, I'm there 100%. I won't fail you.",
       description:
         'Lieutenant Steve Cortez is an Alliance pilot aboard the Normandy SR-2 in 2186, where he pilots the UT-47A Kodiak that transports Commander Shepard and squad to mission locations.',
@@ -443,7 +443,7 @@ const db = {
       name: 'Gabriella Daniels',
       gender: 'Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/4/42/Kelly_ME2_boxshot.png/revision/latest/scale-to-width-down/1000?cb=20130401141937',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/4/42/Kelly_ME2_boxshot.png',
       quote:
         "Come on Kenneth. The Commander doesn't want to play cards with grease monkeys like us.",
       description:
@@ -456,7 +456,7 @@ const db = {
       name: 'Kenneth Donnelly',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/5/55/Kenneth.png/revision/latest/scale-to-width-down/540?cb=20100131212833',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/5/55/Kenneth.png',
       quote:
         "I'm just saying I'm feeling a wee bit threatened here. A lot of female energy, and I'm just one man.",
       description:
@@ -469,7 +469,7 @@ const db = {
       name: 'Eve',
       gender: 'Female',
       race: 'Krogan',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/3/3a/ME3_Eve.png/revision/latest/scale-to-width-down/900?cb=20120322235113',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/3/3a/ME3_Eve.png',
       quote: 'In the darkest hour, there is always a way out.',
       description:
         "Eve, as named by Mordin Solus or Padok Wiks, also known as Urdnot Bakara, is a female krogan shaman. Eve is the only survivor of Maelon's experiments on Tuchanka in 2185 to cure the genophage. She, along with a number of other female krogan, were recovered by the salarian Special Tasks Group after it was shut down and transferred to Sur'Kesh.",
@@ -481,7 +481,7 @@ const db = {
       name: 'Admiral Steven Hackett',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/c/c7/Hackett.png/revision/latest/scale-to-width-down/882?cb=20110318161859',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/c/c7/Hackett.png',
       quote:
         'Never before have so many come together--from all quarters of the galaxy. But never before have we faced an enemy such as this. The Reapers will show us no mercy. We must give them no quarter. They will terrorize our populations. We must stand fast in the face of that terror. They will advance until our last city falls, but we will not fall. We will prevail. Each of us will be defined by our actions in the coming battle. Stand fast. Stand strong. Stand together. Hackett out.',
       description:
@@ -494,7 +494,7 @@ const db = {
       name: 'Samantha Traynor',
       gender: 'Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/7/7e/ME3_Samantha_Traynor_Character_Shot.png/revision/latest/scale-to-width-down/700?cb=20120328162224',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/7/7e/ME3_Samantha_Traynor_Character_Shot.png',
       quote:
         "And if flagging your messages and managing strategic intel helps you in any way, then it's worth it.",
       description:
@@ -507,7 +507,7 @@ const db = {
       name: 'Urdnot Wreav',
       gender: 'Male',
       race: 'Krogan',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/7/72/Tuchanka_-_wreav_being_boss.png/revision/latest/scale-to-width-down/1000?cb=20121030164856',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/7/72/Tuchanka_-_wreav_being_boss.png',
       quote:
         'Those females are immune to the genophage, and they belong to me!',
       description:
@@ -520,7 +520,7 @@ const db = {
       name: 'Saren Arterius',
       gender: 'Male',
       race: 'Turian',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/3/37/Virmire_Saren_Fueltank_Full_Shot_Cropped.png/revision/latest/scale-to-width-down/888?cb=20170421013517',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/3/37/Virmire_Saren_Fueltank_Full_Shot_Cropped.png',
       quote: 'Your species needs to learn its place, Shepard.',
       description:
         "Saren Arterius, born 2139, is the longest serving turian member of the Spectres, the elite operatives answering directly to the Citadel Council. For 24 years, he has been an agent of the Council's will, a zealous defender of galactic stability in the unsettled border region of the Skyllian Verge.",
@@ -532,7 +532,7 @@ const db = {
       name: 'Matriarch Benezia',
       gender: 'Femanine',
       race: 'Asari',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/8/87/Matriarch_Benezia_charbox.png/revision/latest/scale-to-width-down/1000?cb=20140409110031',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/8/87/Matriarch_Benezia_charbox.png',
       quote:
         'You do not know the privilege of being a mother. There is power in creation. To shape a life… turn it toward happiness or despair…',
       description:
@@ -545,7 +545,7 @@ const db = {
       name: 'Sovereign',
       gender: 'A.I.',
       race: 'Reaper',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/2/25/Sovereign_charshot.png/revision/latest/scale-to-width-down/1000?cb=20140409064900',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/2/25/Sovereign_charshot.png',
       quote:
         'We impose order on the chaos of organic evolution. You exist because we allow it, and you will end because we demand it.',
       description:
@@ -558,7 +558,7 @@ const db = {
       name: 'The Collector General',
       gender: 'Unknown',
       race: 'Collector',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/3/3c/Collectors_Leader_Character_Shot.png/revision/latest/scale-to-width-down/400?cb=20091119091650',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/3/3c/Collectors_Leader_Character_Shot.png',
       quote: 'I am assuming direct control.',
       description:
         "The Collector General was a unique Collector who controlled the rest of the Collectors from the Collector Base. Like all Collectors, the General was a victim of Harbinger's indoctrination up until its death at the hands of Shepard and the Commander's squad.",
@@ -570,7 +570,7 @@ const db = {
       name: 'Harbinger',
       gender: 'A.I.',
       race: 'Reaper',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/d/d8/Harby_ME2_holopearance.png/revision/latest/scale-to-width-down/1000?cb=20140625101801',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/d/d8/Harby_ME2_holopearance.png',
       quote:
         'That which you know as Reapers are your salvation through destruction.',
       description:
@@ -583,7 +583,7 @@ const db = {
       name: 'The Shadow Broker',
       gender: 'Male',
       race: 'Yahg',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/7/7c/Yahgbroker.png/revision/latest/scale-to-width-down/1000?cb=20130529041932',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/7/7c/Yahgbroker.png',
       quote: 'I know your every secret, while you fumble in the dark.',
       description:
         'The Shadow Broker is an enigmatic figure at the head of an expansive organization which trades in information, always selling to the highest bidder. The Shadow Broker appears to be highly competent at its trade: all secrets that are bought and sold never allow one customer of the Broker to gain a significant advantage, forcing the customers to continue trading information to avoid becoming disadvantaged, allowing the Broker to remain in business.',
@@ -595,7 +595,7 @@ const db = {
       name: 'Maya Brooks',
       gender: 'Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/1/10/Maya_mugshot.png/revision/latest/scale-to-width-down/1000?cb=20130309094245',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/1/10/Maya_mugshot.png',
       quote: 'I know your every secret, while you fumble in the dark.',
       description:
         "Maya Brooks is a former Cerberus operative who left the organization to pursue her own pro-human agenda. Her true name is unknown; 'Maya Brooks' is an admitted alias, and she has used at least three other names while working with Cerberus: 'Captain Channing', 'Hope Lilium', and 'Rasa'. Accomplished at infiltration and espionage, Brooks specializes in throwing numerous distractions at her adversaries while she stealthily completes her objectives.",
@@ -607,7 +607,7 @@ const db = {
       name: 'Catalyst',
       gender: 'Artificial Intelligence',
       race: 'Artificial Intelligence',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/c/c2/Catalyst_kid.png/revision/latest/scale-to-width-down/432?cb=20120526085506',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/c/c2/Catalyst_kid.png',
       quote:
         'When fire burns, is it at war? Is it in conflict? Or is it simply doing what it was created to do? We are no different.',
       description:
@@ -620,7 +620,7 @@ const db = {
       name: 'The Illusive Man',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/8/85/Illusive_man_modified.png/revision/latest/scale-to-width-down/1000?cb=20200304154556',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/8/85/Illusive_man_modified.png',
       quote:
         "Where you see a means to destroy, I see a way to control--to dominate and harness the Reapers' power. Imagine how strong humanity would be if we controlled them.",
       description:
@@ -633,7 +633,7 @@ const db = {
       name: 'Kai Leng',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/0/0e/Kai_Leng_Profile.jpg/revision/latest/scale-to-width-down/900?cb=20120320071056',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/0/0e/Kai_Leng_Profile.jpg',
       quote: 'Cerberus thanks you for all your hard work.',
       description:
         'Kai Leng is an assassin working for the human-survivalist organization Cerberus. Leng was formerly a lieutenant and N7 marine in the Systems Alliance known for having anti-alien attitudes. He is described as being Earth-born with features that show his dominant Chinese heritage.',
@@ -645,7 +645,7 @@ const db = {
       name: 'Henry Lawson',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/e/e5/ME3_Henry_Lawson.png/revision/latest/scale-to-width-down/800?cb=20120411220512',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/e/e5/ME3_Henry_Lawson.png',
       quote: '',
       description:
         "Henry Lawson is the father of Miranda Lawson and her genetic twin, Oriana. Lawson is a powerful businessman who was obsessed with securing a way to make his mark on history - namely, by creating a 'genetic dynasty'. Rather than have a normal family, Henry took his own DNA and doubled his X chromosome to create a daughter, Miranda, whom he ensured would have 'desirable traits.' Miranda was not the first offspring engineered in such a way, but she was the first one Henry kept.",
@@ -657,7 +657,7 @@ const db = {
       name: 'Mysterious Figure',
       gender: 'Male or Female',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/4/49/Mysterious_Figure_%28static%29.png/revision/latest/scale-to-width-down/1000?cb=20130326074316',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/4/49/Mysterious_Figure_%28static%29.png',
       quote:
         'Look at you. What makes you so damned special? Why you and not me?',
       description:
@@ -670,7 +670,7 @@ const db = {
       name: 'Oleg Petrovsky',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/6/6a/ME3-Oleg-Petrovsky.png/revision/latest/scale-to-width-down/1000?cb=20121129011636',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/6/6a/ME3-Oleg-Petrovsky.png',
       quote:
         'We all sabotage ourselves in nefarious ways. Perhaps deep down you fear success.',
       description:
@@ -683,7 +683,7 @@ const db = {
       name: 'Donnel Udina',
       gender: 'Male',
       race: 'Human',
-      img: 'https://static.wikia.nocookie.net/masseffect/images/9/9b/ME3_Udina_Embassies_Office.png/revision/latest/scale-to-width-down/856?cb=20120322160526',
+      img: 'https://static.wikia.nocookie.net/masseffect/images/9/9b/ME3_Udina_Embassies_Office.png',
       quote:
         "They're a bunch of self-concerned jackasses, Shepard. We may have a spot on the Council, but humanity will always be considered second-rate.",
       description:
@@ -1230,3 +1230,5 @@ const db = {
     },
   ],
 };
+
+export default db;

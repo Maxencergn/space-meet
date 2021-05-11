@@ -4,11 +4,13 @@ import './App.css';
 import Signup from './components/Signup';
 import LoadingPage from './components/LoadingPage';
 import React from 'react';
+import Match from './components/Match';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 function App() {
   return (
     <div className='App'>
+      <Match />
       <Router>
         <div>
           <Switch>
