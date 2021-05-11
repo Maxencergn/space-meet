@@ -71,7 +71,9 @@
 .birthdayContainer,
 .raceContainer,
 .emailContainer,
-.genderContainer {
+.genderContainer,
+.aboutContainer,
+.quoteContainer {
   text-align: center;
   font-size: 20px;
   width: 100%;
@@ -80,7 +82,9 @@
 
 .input-pseudo,
 .input-birthday,
-.input-email {
+.input-email,
+.input-about,
+.input-quote {
   width: 90%;
   height: 50px;
   text-decoration: none;
