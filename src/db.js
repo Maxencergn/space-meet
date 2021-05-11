@@ -14,7 +14,7 @@ const db = {
         'The player must accept a military specialization, which determines a set of talents. The six classes are Soldier, Engineer, Adept, Infiltrator, Sentinel, and Vanguard. The class choice will also affect weapon proficiency – if Shepard is not proficient with a weapon, the Commander can still fire it, but cannot zoom in with it, and many weapon bonuses are void. This applies to all weapons except the pistol, which all classes are proficient in.',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
-      like: 0,
+      age: 32,
     },
     {
       characterId: 1,
@@ -29,7 +29,7 @@ const db = {
       class: 'Soldier',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
-      like: 0,
+      age: 27,
     },
     {
       characterId: 2,
@@ -44,7 +44,7 @@ const db = {
       class: 'Turian Agent',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
-      like: 0,
+      age: 29,
     },
     {
       characterId: 3,
@@ -74,7 +74,7 @@ const db = {
       class: 'Asari Scientist',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
-      like: 0,
+      age: 106,
     },
     {
       characterId: 5,
@@ -104,7 +104,7 @@ const db = {
       class: 'Krogan Battlemaster',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
-      like: 0,
+      age: 1052,
     },
     {
       characterId: 7,
@@ -133,7 +133,7 @@ const db = {
       class: 'Subject Zero',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
-      like: 0,
+      age: 24,
     },
     {
       characterId: 9,
@@ -162,7 +162,7 @@ const db = {
       class: 'Master Thief',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
-      like: 0,
+      age: 25,
     },
     {
       characterId: 11,
@@ -176,7 +176,7 @@ const db = {
       class: 'Geth Infiltrator',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
-      like: 0,
+      age: 'unknown',
     },
     {
       characterId: 12,
@@ -191,7 +191,7 @@ const db = {
       class: 'Cerberus Officer',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
-      like: 0,
+      age: 35,
     },
     {
       characterId: 13,
@@ -220,7 +220,7 @@ const db = {
       class: 'Asari Justicar',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
-      like: 0,
+      age: 1000,
     },
     {
       characterId: 15,
@@ -249,7 +249,7 @@ const db = {
       class: 'Mercenary Veteran',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
-      like: 0,
+      age: 70,
     },
     {
       characterId: 17,
@@ -277,7 +277,7 @@ const db = {
       class: 'Arms Master',
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
-      like: 0,
+      age: 27,
     },
     {
       characterId: 19,
