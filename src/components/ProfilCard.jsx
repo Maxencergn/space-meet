@@ -2,7 +2,11 @@ import marker from '../img/marker.png';
 import './ProfilCard.css';
 import db from '../db';
 import profil from '../img/profil.png';
-function ProfilCard({ name, img, race }) {
+import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
+
+function ProfilCard({ id, name, img, race, quote, description, gender, setCurrentPnj }) {
+
   let planet = '';
 
   for (let i = 0; i < db.races.length; i++) {
@@ -10,22 +14,38 @@ function ProfilCard({ name, img, race }) {
   }
   if (planet === '') planet = 'Unknown';
 
-  console.log(name, img, race);
+  useEffect(() => {
+    setCurrentPnj({
+      id: id,
+      name: name,
+      race: race,
+      gender: gender,
+      quote: quote,
+      description: description,
+      img: img,
+      planet: planet
+    });
+  }, []);
+
   return (
-    <div className='profil-card'>
-      <div className='container-card'>
-        <img className='img-profil-card' src={img} alt='img' />
-        <h2 className='name'>{name}</h2>
-        <p className="race">
-          <img className='marker-img' alt='' src={profil} />
-          {race}
-        </p>
-        <p className="planet">
-          <img className='marker-img' alt='' src={marker} />
-          {planet}
-        </p>
-      </div>
-    </div>
+    <>
+      <Link to='/profilMassEffect'>
+        <div className='profil-card'>
+          <div className='container-card'>
+            <img className='img-profil-card' src={img} alt='img' />
+            <h2 className='name'>{name}</h2>
+            <p className='race'>
+              <img className='marker-img' alt='' src={profil} />
+              {race}
+            </p>
+            <p className='planet'>
+              <img className='marker-img' alt='' src={marker} />
+              {planet}
+            </p>
+          </div>
+        </div>
+      </Link>
+    </>
   );
 }
 
