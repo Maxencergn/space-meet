@@ -10,10 +10,7 @@ function Signup(props) {
   const [birthday, setBirthday] = useState('');
   const [email, setEmail] = useState('');
   const [race, setRace] = useState('');
-  const [male, setMale] = useState('');
-  const [female, setFemale] = useState('');
-  const [ai, setAi] = useState('');
-  const [other, setOther] = useState('');
+  const [gender, setGender] = useState('');
   const [enableCreation, setEnableCreation] = useState(false);
 
   if (
@@ -21,10 +18,7 @@ function Signup(props) {
     birthday &&
     email &&
     race &&
-    male &&
-    female &&
-    ai &&
-    other &&
+    gender &&
     !enableCreation
   )
     setEnableCreation(true);
@@ -34,10 +28,7 @@ function Signup(props) {
     localStorage.setItem('birthday', birthday);
     localStorage.setItem('email', email);
     localStorage.setItem('race', race);
-    localStorage.setItem('male', male);
-    localStorage.setItem('female', female);
-    localStorage.setItem('ai', ai);
-    localStorage.setItem('other', other);
+    localStorage.setItem('gender', gender);
   };
 
   return (
@@ -49,8 +40,8 @@ function Signup(props) {
       <div className='infos'>
         <form className='pseudoContainer'>
           <label htmlFor='pseudo' className='pseudo'>
-            <p>Pseudo</p>
             <input
+              className='input-pseudo'
               type='text'
               name='pseudo'
               id='pseudo'
@@ -60,64 +51,11 @@ function Signup(props) {
             />
           </label>
         </form>
-        <div className='form-group'>
-          <div className='form-check form-check-inline'>
-            <input
-              className='form-check-input'
-              type='radio'
-              name='genderOptions'
-              id='inlineRadio1'
-              onChange={(event) => setMale(event.target.value)}
-              value={male}
-            />
-          </div>
-          <div className='form-check-label' htmlFor='inlineRadio1'>
-            Male
-          </div>
-          <div className='form-check form-check-inline'>
-            <input
-              className='form-check-input'
-              type='radio'
-              name='genderOptions'
-              id='inlineRadio2'
-              onChange={(event) => setFemale(event.target.value)}
-              value={female}
-            />
-          </div>
-          <div className='form-check-label' htmlFor='inlineRadio2'>
-            Female
-          </div>
-          <div className='form-check form-check-inline'>
-            <input
-              className='form-check-input'
-              type='radio'
-              name='genderOptions'
-              id='inlineRadio2'
-              onChange={(event) => setAi(event.target.value)}
-              value={ai}
-            />
-          </div>
-          <div className='form-check-label' htmlFor='inlineRadio2'>
-            A.I.
-          </div>
-          <div className='form-check form-check-inline'>
-            <input
-              className='form-check-input'
-              type='radio'
-              name='genderOptions'
-              id='inlineRadio2'
-              onChange={(event) => setOther(event.target.value)}
-              value={other}
-            />
-          </div>
-          <div className='form-check-label' htmlFor='inlineRadio2'>
-            Other
-          </div>
-        </div>
+
         <form className='birthdayContainer'>
           <label htmlFor='birthday' className='birthday'>
-            <p>Date de naissance</p>
             <input
+              className='input-birthday'
               type='date'
               name='birthday'
               id='birthday'
@@ -128,8 +66,8 @@ function Signup(props) {
         </form>
         <form className='raceContainer'>
           <label>
-            Your race :&nbsp;
             <select
+              className='input-race'
               type='text'
               name='race'
               id='race'
@@ -154,8 +92,8 @@ function Signup(props) {
         </form>
         <form className='emailContainer'>
           <label htmlFor='email' className='email'>
-            <p>Email</p>
             <input
+              className='input-email'
               type='email'
               name='email'
               id='email'
@@ -165,18 +103,39 @@ function Signup(props) {
             />
           </label>
         </form>
-        <form className='submit'>
-          <button
-            type='submit'
-            id='submit'
-            onClick={handleClic}
-            disabled={!enableCreation}
-          >
-            Créer mon compte
-          </button>
-        </form>
+        <div className='genderContainer'>
+          <div className='form-check form-check-inline'>
+            <label>
+              <select
+                className='input-gender'
+                type='text'
+                name='gender'
+                id='gender'
+                onChange={handleGender}
+                value={gender}
+              >
+                <option value='Male'>Male</option>
+                <option value='Female'>Female</option>
+                <option value='A.I.'>A.I.</option>
+                <option value='Other'>Other</option>
+              </select>
+            </label>
+            <form className='submit'>
+              <button
+                className='signup-btn'
+                type='submit'
+                id='submit'
+                onClick={handleClic}
+                disabled={!enableCreation}
+              >
+                Créer mon compte
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   );
 }
+
 export default Signup;
