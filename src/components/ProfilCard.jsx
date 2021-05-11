@@ -5,8 +5,17 @@ import profil from '../img/profil.png';
 import { Link } from 'react-router-dom';
 import { useEffect } from 'react';
 
-function ProfilCard({ characterId, name, img, race, quote, description, gender, setCurrentPnj, currentPnj }) {
-
+function ProfilCard({
+  characterId,
+  name,
+  img,
+  race,
+  quote,
+  description,
+  gender,
+  setCurrentPnj,
+  currentPnj,
+}) {
   let planet = '';
 
   for (let i = 0; i < db.races.length; i++) {
@@ -23,7 +32,7 @@ function ProfilCard({ characterId, name, img, race, quote, description, gender, 
       quote: quote,
       description: description,
       img: img,
-      planet: planet
+      planet: planet,
     });
   }, []);
 
