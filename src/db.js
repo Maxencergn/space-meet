@@ -15,6 +15,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 32,
+      like: 0,
     },
     {
       characterId: 1,
@@ -30,6 +31,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 27,
+      like: 0,
     },
     {
       characterId: 2,
@@ -45,6 +47,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 29,
+      like: 0,
     },
     {
       characterId: 3,
@@ -60,6 +63,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 34,
+      like: 0,
     },
     {
       characterId: 4,
@@ -75,6 +79,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 106,
+      like: 0,
     },
     {
       characterId: 5,
@@ -90,6 +95,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 37,
+      like: 0,
     },
     {
       characterId: 6,
@@ -105,6 +111,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
       age: 1052,
+      like: 0,
     },
     {
       characterId: 7,
@@ -119,6 +126,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
       age: 927,
+      like: 0,
     },
     {
       characterId: 8,
@@ -134,6 +142,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 24,
+      like: 0,
     },
     {
       characterId: 9,
@@ -148,6 +157,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 28,
+      like: 0,
     },
     {
       characterId: 10,
@@ -163,6 +173,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
       age: 25,
+      like: 0,
     },
     {
       characterId: 11,
@@ -177,6 +188,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
       age: 'unknown',
+      like: 0,
     },
     {
       characterId: 12,
@@ -192,6 +204,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 35,
+      like: 0,
     },
     {
       characterId: 13,
@@ -206,6 +219,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
       age: 35,
+      like: 0,
     },
     {
       characterId: 14,
@@ -221,6 +235,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 1000,
+      like: 0,
     },
     {
       characterId: 15,
@@ -236,6 +251,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 39,
+      like: 0,
     },
     {
       characterId: 16,
@@ -250,6 +266,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
       age: 70,
+      like: 0,
     },
     {
       characterId: 17,
@@ -264,6 +281,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: false,
       age: 'unknown',
+      like: 0,
     },
     {
       characterId: 18,
@@ -278,6 +296,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 27,
+      like: 0,
     },
     {
       characterId: 19,
@@ -293,6 +312,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 50186,
+      like: 0,
     },
     {
       characterId: 20,
@@ -307,6 +327,7 @@ const db = {
       appearance: ['Mass Effect'],
       isRomanceable: false,
       age: 29,
+      like: 0,
     },
     {
       characterId: 21,
@@ -322,6 +343,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: false,
       age: 22,
+      like: 0,
     },
     {
       characterId: 22,
@@ -336,6 +358,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 48,
+      like: 0,
     },
     {
       characterId: 23,
@@ -350,6 +373,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 41,
+      like: 0,
     },
     {
       characterId: 24,
@@ -364,6 +388,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 29,
+      like: 0,
     },
     {
       characterId: 25,
@@ -377,6 +402,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 49,
+      like: 0,
     },
     {
       characterId: 26,
@@ -390,6 +416,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 1000,
+      like: 0,
     },
     {
       characterId: 27,
@@ -403,6 +430,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 'unknown',
+      like: 0,
     },
     {
       characterId: 28,
@@ -417,6 +445,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 45,
+      like: 0,
     },
     {
       characterId: 29,
@@ -430,6 +459,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 27,
+      like: 0,
     },
     {
       characterId: 30,
@@ -443,6 +473,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 28,
+      like: 0,
     },
     {
       characterId: 31,
@@ -457,6 +488,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 40,
+      like: 0,
     },
     {
       characterId: 32,
@@ -470,6 +502,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 38,
+      like: 0,
     },
     {
       characterId: 33,
@@ -484,6 +517,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 25,
+      like: 0,
     },
     {
       characterId: 34,
@@ -498,6 +532,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 32,
+      like: 0,
     },
     {
       characterId: 35,
@@ -511,6 +546,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 427,
+      like: 0,
     },
     {
       characterId: 36,
@@ -524,7 +560,8 @@ const db = {
         'Admiral Steven Hackett is a top-ranking official of the Alliance Navy and commanding officer of the Fifth Fleet. He is based at Arcturus Station.',
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
-      age : 62,
+      age: 62,
+      like: 0,
     },
     {
       characterId: 37,
@@ -539,6 +576,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 30,
+      like: 0,
     },
     {
       characterId: 38,
@@ -553,6 +591,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 1300,
+      like: 0,
     },
     {
       characterId: 39,
@@ -566,6 +605,7 @@ const db = {
       appearance: ['Mass Effect'],
       isRomanceable: true,
       age: 44,
+      like: 0,
     },
     {
       characterId: 40,
@@ -580,6 +620,7 @@ const db = {
       appearance: ['Mass Effect'],
       isRomanceable: true,
       age: 845,
+      like: 0,
     },
     {
       characterId: 41,
@@ -594,6 +635,7 @@ const db = {
       appearance: ['Mass Effect'],
       isRomanceable: true,
       age: 'unknown',
+      like: 0,
     },
     {
       characterId: 42,
@@ -607,6 +649,7 @@ const db = {
       appearance: ['Mass Effect 2'],
       isRomanceable: true,
       age: 21,
+      like: 0,
     },
     {
       characterId: 43,
@@ -621,6 +664,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 'unknown',
+      like: 0,
     },
     {
       characterId: 44,
@@ -634,6 +678,7 @@ const db = {
       appearance: ['Mass Effect 2'],
       isRomanceable: true,
       age: 48,
+      like: 0,
     },
     {
       characterId: 45,
@@ -647,6 +692,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 32,
+      like: 0,
     },
     {
       characterId: 46,
@@ -661,6 +707,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 'unknown',
+      like: 0,
     },
     {
       characterId: 47,
@@ -675,6 +722,7 @@ const db = {
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 47,
+      like: 0,
     },
     {
       characterId: 48,
@@ -688,6 +736,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 22,
+      like: 0,
     },
     {
       characterId: 49,
@@ -701,6 +750,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 33,
+      like: 0,
     },
     {
       characterId: 50,
@@ -715,6 +765,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 'unknown',
+      like: 0,
     },
     {
       characterId: 51,
@@ -729,6 +780,7 @@ const db = {
       appearance: ['Mass Effect 3'],
       isRomanceable: true,
       age: 52,
+      like: 0,
     },
     {
       characterId: 52,
@@ -743,6 +795,7 @@ const db = {
       appearance: ['Mass Effect', 'Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
       age: 32,
+      like: 0,
     },
   ],
   planets: [
