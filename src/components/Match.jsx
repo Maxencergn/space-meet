@@ -1,6 +1,6 @@
 import db from '../db';
 import './Match.css';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import ProfilCard from './ProfilCard';
 import cross from '../img/cross.png';
 import heart from '../img/heart.png';
