@@ -1,6 +1,5 @@
 import './ProfilMassEffect.css';
 import marker from '../img/marker.png';
-import leftArrow from '../img/left-arrow.png';
 
 const character = {
   characterId: 3,
@@ -31,7 +30,7 @@ function ProfilUser() {
       <div className='infos-container'>
         <h1>{pseudo}</h1>
         <p>
-          <img className='marker-img' alt='' src={marker} />
+          <img className='marker-img-pnj' alt='' src={marker} />
           Asari Planet
         </p>
         <hr width='90%' align='center'></hr>
