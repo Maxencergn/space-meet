@@ -2,6 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
+import { useHistory } from 'react-router-dom';
 import './Signup.css';
 import ChangePicture from './ChangePicture';
 
@@ -11,7 +12,10 @@ function Signup(props) {
   const [email, setEmail] = useState('');
   const [race, setRace] = useState('');
   const [gender, setGender] = useState('');
+  const photoOK = localStorage.getItem('picture');
   const [enableCreation, setEnableCreation] = useState(false);
+
+  const history = useHistory();
 
   if (
     pseudo &&
@@ -19,6 +23,7 @@ function Signup(props) {
     email &&
     race &&
     gender &&
+    photoOK &&
     !enableCreation
   )
     setEnableCreation(true);
@@ -29,6 +34,7 @@ function Signup(props) {
     localStorage.setItem('email', email);
     localStorage.setItem('race', race);
     localStorage.setItem('gender', gender);
+    history.push('/match');
   };
 
   const handleChangePseudo = (event) => {
@@ -80,6 +86,19 @@ function Signup(props) {
             />
           </label>
         </form>
+        <form className='emailContainer'>
+          <label htmlFor='email' className='email'>
+            <input
+              className='input-email'
+              type='email'
+              name='email'
+              id='email'
+              placeholder='spacemeet@mail.com'
+              onChange={handleChangeEmail}
+              value={email}
+            />
+          </label>
+        </form>
         <form className='raceContainer'>
           <label>
             <select
@@ -90,6 +109,9 @@ function Signup(props) {
               onChange={handleChangeRace}
               value={race}
             >
+              <option value='' disabled selected>
+                Select your race
+              </option>
               <option value='Human'>Human</option>
               <option value='Turian'>Turian</option>
               <option value='Asari'>Asari</option>
@@ -106,19 +128,6 @@ function Signup(props) {
             </select>
           </label>
         </form>
-        <form className='emailContainer'>
-          <label htmlFor='email' className='email'>
-            <input
-              className='input-email'
-              type='email'
-              name='email'
-              id='email'
-              placeholder='spacemeet@mail.com'
-              onChange={handleChangeEmail}
-              value={email}
-            />
-          </label>
-        </form>
         <div className='genderContainer'>
           <div className='form-check form-check-inline'>
             <label>
@@ -130,6 +139,9 @@ function Signup(props) {
                 onChange={handleGender}
                 value={gender}
               >
+                <option value='' disabled selected>
+                  Select your gender
+                </option>
                 <option value='Male'>Male</option>
                 <option value='Female'>Female</option>
                 <option value='A.I.'>A.I.</option>
