@@ -1,5 +1,6 @@
 import './ProfilMassEffect.css';
 import marker from '../img/marker.png';
+import profil from '../img/profil.png';
 
 const character = {
   characterId: 3,
@@ -21,7 +22,7 @@ function ProfilUser() {
   const race = localStorage.getItem('race');
   const gender = localStorage.getItem('gender');
   const photoOK = localStorage.getItem('picture');
-  
+
   return (
     <div className='profil-masseffect'>
       <div className='container-img-profil'>
@@ -30,16 +31,18 @@ function ProfilUser() {
       <div className='infos-container'>
         <h1>{pseudo}</h1>
         <p>
+          <img className='marker-img-pnj' alt='' src={profil} />
+          {race}
+        </p>
+        <p>
           <img className='marker-img-pnj' alt='' src={marker} />
           Asari Planet
         </p>
         <hr width='90%' align='center'></hr>
-        <p>{race}</p>
-        <p>{gender}</p>
         <h3>About</h3>
-        <p>{character.description}</p>
+        <p>Nothing</p>
         <h3>Favourite quote</h3>
-        <p style={{ fontStyle: 'italic' }}>" {character.quote} "</p>
+        <p style={{ fontStyle: 'italic' }}>" Nothing "</p>
       </div>
     </div>
   );
