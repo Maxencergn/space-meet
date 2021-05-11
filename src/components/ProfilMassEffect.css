@@ -1,0 +1,55 @@
+.profil-masseffect {
+  width: 100%;
+  height: auto;
+}
+
+.marker-img {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+.container-img-profil {
+  margin: 0;
+  width: 100%;
+  height: 300px;
+  z-index: 0;
+}
+
+.img-profil-ME {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infos-container {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  width: 100%;
+  height: 170vw;
+  background-color: #eee;
+  margin-top: -30px;
+  z-index: 1000;
+  position: absolute;
+  padding-top: 20px;
+}
+
+.infos-container h1,
+.infos-container h2,
+.infos-container p,
+.infos-container h3 {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.infos-container p {
+  color: rgb(129, 129, 129);
+}
+
+.img-left-arrow {
+  width: 45px;
+  height: 45px;
+  filter: invert(100%);
+  position: absolute;
+  margin: 15px;
+}
