@@ -1,47 +1,35 @@
-import React, { Component } from 'react';
-export class ChangePicture extends Component {
-  state = {
-    profileImg: '',
-  };
-  imageHandler = (e) => {
+const ChangePicture = ({ pictureUploaded, setPictureUploaded }) => {
+  const imageHandler = (e) => {
     const reader = new FileReader();
     reader.onload = () => {
       if (reader.readyState === 2) {
-        this.setState({ profileImg: reader.result });
+        const img = { profileImg: reader.result };
+        localStorage.setItem('picture', img.profileImg);
+        setPictureUploaded(true);
       }
     };
     reader.readAsDataURL(e.target.files[0]);
   };
-  render() {
-    const { profileImg } = this.state;
-    return (
-      <div className='page'>
-        <div className='container'>
-          <div className='img-holder'>
-            <img
-              src={profileImg}
-              alt=''
-              id='img'
-              className='img'
-              type='file'
-              accept='image/*'
-              name='image-upload'
-              onChange={this.imageHandler}
-            />
-          </div>
+
+  return (
+    <div className='page'>
+      <div className='container'>
+        <div className='img-holder'>
           <input
             type='file'
             accept='image/*'
             name='image-upload'
             id='files'
-            onChange={this.imageHandler}
+            onChange={imageHandler}
             style={{ display: 'none' }}
           />
-          <label for='files'>Upload your picture</label>
+          <label htmlFor='files'>
+            {pictureUploaded ? 'Picture uploaded' : 'Upload your picture'}
+          </label>
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default ChangePicture;
