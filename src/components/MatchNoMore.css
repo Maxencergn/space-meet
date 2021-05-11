@@ -1,0 +1,20 @@
+.MatchNoMore {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 200px;
+}
+
+.noMore {
+  color: rgb(129, 129, 129);
+  height: 30px;
+  word-wrap: normal;
+}
+
+.emojiWink {
+  height: 20%;
+  width: 20%;
+}

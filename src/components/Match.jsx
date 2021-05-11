@@ -1,17 +1,29 @@
 import db from '../db';
 import './Match.css';
-import { useState, useEffect } from 'react';
+import MatchNoMore from './MatchNoMore';
+import { useEffect, useState } from 'react';
 import ProfilCard from './ProfilCard';
 import cross from '../img/cross.png';
 import heart from '../img/heart.png';
 
 const Match = ({ setCurrentPnj, currentPnj }) => {
-  // eslint-disable-next-line no-unused-vars
-  const [characters, setCharacters] = useState(db.characters);
+  if (localStorage.getItem('characters') === null)
+    localStorage.setItem('characters', JSON.stringify(db.characters));
+
+  const characters = JSON.parse(localStorage.getItem('characters'));
+
   const [filteredCharacters, setFilteredCharacters] = useState(db.characters);
   const [randomId, setRandomId] = useState(
     Math.floor(Math.random() * characters.length)
   );
+
+  useEffect(() => {
+    if (currentPnj.id) {
+      for (let i = 0; i < filteredCharacters.length; i++) {
+        if (filteredCharacters[i].characterId === currentPnj.id) setRandomId(i);
+      }
+    }
+  }, []);
 
   const HandleLike = () => {
     let charId = filteredCharacters[randomId].characterId;
@@ -23,6 +35,7 @@ const Match = ({ setCurrentPnj, currentPnj }) => {
       characters.filter((character) => character.like === 0)
     );
     setRandomId(Math.floor(Math.random() * (filteredCharacters.length - 1)));
+    localStorage.setItem('characters', JSON.stringify(characters));
   };
 
   const HandleDislike = () => {
@@ -35,30 +48,38 @@ const Match = ({ setCurrentPnj, currentPnj }) => {
       characters.filter((character) => character.like === 0)
     );
     setRandomId(Math.floor(Math.random() * (filteredCharacters.length - 1)));
+    localStorage.setItem('characters', JSON.stringify(characters));
   };
 
   return (
     <div>
-      {filteredCharacters.map(
-        (character, index) =>
-          randomId === index && (
-            <ProfilCard
-              key={index}
-              {...character}
-              setCurrentPnj={setCurrentPnj}
-              currentPnj={currentPnj}
-            />
+      {!filteredCharacters.length && <MatchNoMore />}
+      {filteredCharacters.length
+        ? filteredCharacters.map(
+            (character, index) =>
+              randomId === index && (
+                <ProfilCard
+                  key={index}
+                  {...character}
+                  setCurrentPnj={setCurrentPnj}
+                  currentPnj={currentPnj}
+                />
+              )
           )
+        : ''}
+      {filteredCharacters.length ? (
+        <div className='container-img'>
+          <img src={heart} alt='heart' className='heart' onClick={HandleLike} />
+          <img
+            src={cross}
+            alt='cross'
+            className='cross'
+            onClick={HandleDislike}
+          />
+        </div>
+      ) : (
+        ''
       )}
-      <div className='container-img'>
-        <img src={heart} alt='heart' className='heart' onClick={HandleLike} />
-        <img
-          src={cross}
-          alt='cross'
-          className='cross'
-          onClick={HandleDislike}
-        />
-      </div>
     </div>
   );
 };
