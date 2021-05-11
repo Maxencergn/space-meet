@@ -1,8 +1,12 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import db from '../db';
 import './Match.css';
+<<<<<<< HEAD
 import MatchNoMore from './MatchNoMore';
 import { useEffect, useState } from 'react';
+=======
+import { useState } from 'react';
+>>>>>>> afd6b0ce041936918e6c19543d6b306db1a0303d
 import ProfilCard from './ProfilCard';
 import cross from '../img/cross.png';
 import heart from '../img/heart.png';
