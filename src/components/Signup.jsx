@@ -83,7 +83,7 @@ function Signup(props) {
               name='email'
               id='email'
               placeholder='spacemeet@mail.com'
-              onChange={handleChangeEmail}
+              onChange={(event) => setEmail(event.target.value)}
               value={email}
             />
           </label>
@@ -125,7 +125,7 @@ function Signup(props) {
                 type='text'
                 name='gender'
                 id='gender'
-                onChange={handleGender}
+                onChange={(event) => setGender(event.target.value)}
                 value={gender}
               >
                 <option value='' disabled selected>

@@ -65,7 +65,7 @@
 
 .pseudoContainer {
   font-size: 20px;
-
+}
 
 .pseudoContainer,
 .birthdayContainer,
@@ -113,10 +113,10 @@
 }
 
 .form-group {
-    display: flex;
-    margin: 20px auto;
-    padding: 15px;
-    font-size: 23px;
+  display: flex;
+  margin: 20px auto;
+  padding: 15px;
+  font-size: 23px;
 }
 
 .form-check-label {
@@ -140,5 +140,4 @@
   border: 0;
   color: white;
   font-family: 'Varela Round', sans-serif;
-
 }
