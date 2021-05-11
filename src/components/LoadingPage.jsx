@@ -1,8 +1,18 @@
 import './LoadingPage.scss';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import rocket from '../img/rocket-ship.png';
 
 function LoadingPage() {
+  const history = useHistory();
+
+  const handleClick = () => {
+    if (localStorage.getItem('pseudo')) {
+      history.push('/match');
+    } else {
+      history.push('/signup');
+    }
+  };
+
   return (
     <div>
       <section class='preloader'>
@@ -18,14 +28,14 @@ function LoadingPage() {
             <div class='preloader__circle-line preloader__circle-line--8'></div>
             <div class='preloader__circle-line preloader__circle-line--9'></div>
           </div>
-          <img class='preloader__img' alt="" src={rocket}/>
+          <img class='preloader__img' alt='' src={rocket} />
         </div>
         <h1 class='preloader__h1'>
           Welcome to <br /> Space Meet
         </h1>
-        <Link to='/signup'>
-          <button className='preloader__loading-page-btn'>Let's go</button>
-        </Link>
+        <button className='preloader__loading-page-btn' onClick={handleClick}>
+          Let's go
+        </button>
       </section>
     </div>
   );
