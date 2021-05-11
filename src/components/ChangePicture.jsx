@@ -37,7 +37,7 @@ export class ChangePicture extends Component {
             onChange={this.imageHandler}
             style={{ display: 'none' }}
           />
-          <label for='files'>Choose your picture</label>
+          <label for='files'>Upload your picture</label>
         </div>
       </div>
     );
