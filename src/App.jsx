@@ -10,7 +10,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 function App() {
   return (
     <div className='App'>
-      <Match />
       <Router>
         <div>
           <Switch>
@@ -19,6 +18,9 @@ function App() {
             </Route>
             <Route exact path='/signup'>
               <Signup />
+            </Route>
+            <Route exact path='/match'>
+              <Match />
             </Route>
           </Switch>
         </div>
