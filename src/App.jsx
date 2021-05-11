@@ -23,10 +23,9 @@ function App() {
 
             <Route exact path='/ProfilUser'>
               <ProfilUser />
-
+            </Route>
             <Route exact path='/match'>
               <Match />
-
             </Route>
           </Switch>
         </div>
