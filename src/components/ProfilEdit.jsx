@@ -2,7 +2,7 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
 import React, { useState } from 'react';
-import { useHistory } from 'react-router-dom';
+import { useHistory, Link } from 'react-router-dom';
 import './Signup.css';
 import ChangePicture from './ChangePicture';
 
@@ -168,15 +168,17 @@ function ProfilEdit(props) {
               </label>
             </form>
             <form className='submit'>
-              <button
-                className='signup-btn'
-                type='submit'
-                id='submit'
-                onClick={handleClic}
-                disabled={!enableCreation}
-              >
-                Modifier mon compte
-              </button>
+              <Link to='/ProfilUser'>
+                <button
+                  className='signup-btn'
+                  type='submit'
+                  id='submit'
+                  onClick={handleClic}
+                  disabled={!enableCreation}
+                >
+                  Modifier mon compte
+                </button>
+              </Link>
             </form>
           </div>
         </div>
