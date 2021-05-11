@@ -1,13 +1,10 @@
-/* eslint-disable no-undef */
-/* eslint-disable no-unused-vars */
-import React, { useState } from 'react';
 import './ProfilMassEffect.css';
 import marker from '../img/marker.png';
-import leftArrow from '../img/left-arrow.png';
+import profil from '../img/profil.png';
 
 const character = {
   characterId: 3,
-  name: 'pseudo',
+  name: 'Kaidan Alenko',
   gender: 'Male',
   race: 'Human',
   img: 'https://static.wikia.nocookie.net/masseffect/images/1/19/Kaidan_Character_Box.png',
@@ -21,78 +18,31 @@ const character = {
 };
 
 function ProfilUser() {
-  const [pseudo, setPseudo] = useState(localStorage.getItem('pseudo'));
-  const [birthday, setBirthday] = useState(localStorage.getItem('birthday'));
-  const [email, setEmail] = useState(localStorage.getItem('email'));
-  const [race, setRace] = useState(localStorage.getItem('race'));
-  const [male, setMale] = useState(localStorage.getItem('male'));
-  const [female, setFemale] = useState(localStorage.getItem('female'));
-  const [ai, setAi] = useState(localStorage.getItem('ai'));
-  const [other, setOther] = useState(localStorage.getItem('other'));
-
-  localStorage.getItem('pseudo');
-  localStorage.getItem('birthday');
-  localStorage.getItem('email');
-  localStorage.getItem('race');
-  localStorage.getItem('male');
-  localStorage.getItem('female');
-  localStorage.getItem('ai');
-  localStorage.getItem('other');
-
-  let state = {
-    profileImg: '',
-  };
-  const imageHandler = (e) => {
-    const reader = new FileReader();
-    reader.onload = () => {
-      if (reader.readyState === 2) {
-        this.setState({ profileImg: reader.result });
-      }
-    };
-    reader.readAsDataURL(e.target.files[0]);
-  };
-  let { profileImg } = this.state;
+  const pseudo = localStorage.getItem('pseudo');
+  const race = localStorage.getItem('race');
+  const gender = localStorage.getItem('gender');
+  const photoOK = localStorage.getItem('picture');
 
   return (
     <div className='profil-masseffect'>
       <div className='container-img-profil'>
-        <div className='img-holder'>
-          <img
-            src={profileImg}
-            alt=''
-            id='img'
-            className='img'
-            type='file'
-            accept='image/*'
-            name='image-upload'
-            onChange={imageHandler}
-          />
-        </div>
-        <input
-          type='file'
-          accept='image/*'
-          name='image-upload'
-          id='files'
-          onChange={imageHandler}
-          style={{ display: 'none' }}
-        />
-        <label for='files'>Choose your picture</label>
-        <img className='img-left-arrow' alt='' src={leftArrow} />
-        <img className='img-profil-ME' src={character.img} alt='img' />
+        <img className='img-profil-ME' src={photoOK} alt='img' />
       </div>
       <div className='infos-container'>
-        <h1>{character.name}</h1>
+        <h1>{pseudo}</h1>
         <p>
-          <img className='marker-img' alt='' src={marker} />
+          <img className='marker-img-pnj' alt='' src={profil} />
+          {race}
+        </p>
+        <p>
+          <img className='marker-img-pnj' alt='' src={marker} />
           Asari Planet
         </p>
         <hr width='90%' align='center'></hr>
-        <p>{character.race}</p>
-        <p>{character.class}</p>
         <h3>About</h3>
-        <p>{character.description}</p>
+        <p>Nothing</p>
         <h3>Favourite quote</h3>
-        <p style={{ fontStyle: 'italic' }}>" {character.quote} "</p>
+        <p style={{ fontStyle: 'italic' }}>" Nothing "</p>
       </div>
     </div>
   );

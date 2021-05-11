@@ -4,6 +4,8 @@ import ProfilMassEffect from './components/ProfilMassEffect';
 import Signup from './components/Signup';
 import ProfilUser from './components/ProfilUser';
 import LoadingPage from './components/LoadingPage';
+import Navbar from './components/Navbar';
+import Chat from './components/Chat';
 import React from 'react';
 import { useState } from 'react';
 import Match from './components/Match';
@@ -33,14 +35,20 @@ function App() {
               <Signup />
             </Route>
             <Route exact path='/ProfilUser'>
+              <Navbar />
               <ProfilUser />
             </Route>
             <Route exact path='/match'>
+              <Navbar />
               <Match setCurrentPnj={setCurrentPnj} currentPnj={currentPnj} />
             </Route>
             <Route>
               <Route exact path='/profilMassEffect'>
                 <ProfilMassEffect currentPnj={currentPnj} />
+              </Route>
+              <Route exact path='/chat'>
+                <Navbar />
+                <Chat />
               </Route>
             </Route>
           </Switch>
