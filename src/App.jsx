@@ -2,6 +2,7 @@ import './App.css';
 // import ProfilCard from './components/ProfilCard';
 import ProfilMassEffect from './components/ProfilMassEffect';
 import Signup from './components/Signup';
+import ProfilUser from './components/ProfilUser';
 import LoadingPage from './components/LoadingPage';
 import React from 'react';
 import { useState } from 'react';
@@ -30,6 +31,10 @@ function App() {
             </Route>
             <Route exact path='/signup'>
               <Signup />
+            </Route>
+
+            <Route exact path='/ProfilUser'>
+              <ProfilUser />
             </Route>
             <Route exact path='/match'>
               <Match setCurrentPnj={setCurrentPnj} currentPnj={currentPnj} />
