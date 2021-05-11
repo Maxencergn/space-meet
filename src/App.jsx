@@ -2,6 +2,7 @@ import './App.css';
 // import ProfilMassEffect from './components/ProfilMassEffect';
 // import ProfilCard from './components/ProfilCard';
 import Signup from './components/Signup';
+import ProfilUser from './components/ProfilUser';
 import LoadingPage from './components/LoadingPage';
 import React from 'react';
 import Match from './components/Match';
@@ -19,8 +20,13 @@ function App() {
             <Route exact path='/signup'>
               <Signup />
             </Route>
+
+            <Route exact path='/ProfilUser'>
+              <ProfilUser />
+
             <Route exact path='/match'>
               <Match />
+
             </Route>
           </Switch>
         </div>
