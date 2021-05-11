@@ -39,6 +39,7 @@ function Signup(props) {
     setEmail(event.target.value);
   };
 
+
   return (
     <div className='ProfileCreation'>
       <h1 className='spacemeet'>Sign-up</h1>
@@ -71,6 +72,17 @@ function Signup(props) {
             />
           </label>
         </form>
+        <form>
+        <label>
+         Your race :&nbsp;
+          <select>
+            <option value="Human">Human</option>
+            <option value="Alien">Alien</option>
+            <option value="Robot">Robot</option>
+            <option value="mango">Mango</option>
+          </select>
+        </label>
+      </form>
         <form className='emailContainer'>
           <label htmlFor='email' className='email'>
             <p>Email</p>
