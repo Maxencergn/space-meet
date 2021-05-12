@@ -7,3 +7,11 @@
   align-items: center;
   margin-bottom: 20px;
 }
+
+.img-left-arrow-edit {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  margin: 15px;
+  filter: invert(100%) drop-shadow(0 0 0.75rem grey);
+}

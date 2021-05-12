@@ -62,7 +62,7 @@
 .img-left-arrow {
   width: 45px;
   height: 45px;
-  filter: invert(100%);
+  filter: invert(100%) drop-shadow(0 0 0.75rem grey);
   position: absolute;
   margin: 15px;
 }
