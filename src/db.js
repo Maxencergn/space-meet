@@ -234,7 +234,7 @@ const db = {
       class: 'Asari Justicar',
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
-      age: 1000,
+      age: 1022,
       like: 0,
     },
     {
@@ -415,7 +415,7 @@ const db = {
         "Aria T'Loak is the de facto ruler of Omega, the nominal capital of the Terminus Systems. Also known as the 'Pirate Queen' of Omega, Aria is fiercely possessive of the space station and will do anything to protect it and maintain her dominance.",
       appearance: ['Mass Effect 2', 'Mass Effect 3'],
       isRomanceable: true,
-      age: 1000,
+      age: 997,
       like: 0,
     },
     {
