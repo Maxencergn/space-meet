@@ -1,0 +1,14 @@
+.container-img {
+  margin: auto;
+  display: flex;
+  width: 80%;
+  justify-content: space-around;
+  align-items: center;
+  height: 140px;
+}
+
+.heart,
+.cross {
+  width: 80px;
+  height: 80px;
+}

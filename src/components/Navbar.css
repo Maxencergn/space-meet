@@ -1,0 +1,14 @@
+.navbar-first {
+  width: 100%;
+  height: 70px;  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.img-profil-navbar {
+  margin: 12px 17px;
+  width: 45px;
+  height: 45px;
+  filter: invert(70%);
+}
