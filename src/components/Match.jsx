@@ -1,13 +1,11 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import db from '../db';
 import './Match.css';
-import './HasMatch.css';
 import MatchNoMore from './MatchNoMore';
 import { useEffect, useState } from 'react';
 import ProfilCard from './ProfilCard';
 import cross from '../img/cross.png';
 import heart from '../img/heart.png';
-import HasMatched from './HasMatched';
 
 const Match = ({ setCurrentPnj, currentPnj }) => {
   if (localStorage.getItem('characters') === null)
@@ -56,7 +54,6 @@ const Match = ({ setCurrentPnj, currentPnj }) => {
 
   return (
     <div className='div-match'>
-      <div className="above"><HasMatched /></div> 
       {!filteredCharacters.length && <MatchNoMore />}
       {filteredCharacters.length
         ? filteredCharacters.map(
