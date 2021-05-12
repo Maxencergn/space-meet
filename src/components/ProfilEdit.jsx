@@ -5,6 +5,7 @@ import React, { useEffect, useState } from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import './Signup.css';
 import './ProfilEdit.css';
+import leftArrow from '../img/left-arrow.png';
 import ChangeMiniPicture from './ChangeMiniPicture';
 
 function ProfilEdit(props) {
@@ -17,10 +18,10 @@ function ProfilEdit(props) {
   const [quote, setQuote] = useState(localStorage.getItem('quote'));
 
   useEffect(() => {
-    if (localStorage.getItem('about') === null) setAbout('');
-    if (localStorage.getItem('quote') === null) setQuote('');
+  if (localStorage.getItem('about') === null) setAbout("");
+  if (localStorage.getItem('quote') === null) setQuote("");
   }, []);
-
+  
   const history = useHistory();
 
   const [url, setUrl] = useState(localStorage.getItem('picture'));
@@ -38,10 +39,14 @@ function ProfilEdit(props) {
 
   return (
     <div className='ProfileCreation'>
-      <h1 className='spacemeet'>Account setting</h1>
+      <Link to='/ProfilUser'>
+          <img className='img-left-arrow-edit' alt='' src={leftArrow} />
+        </Link>
+      <h1 className='spacemeet'>Edit profile</h1>
       <div className='pictureEdit'>
         <ChangeMiniPicture url={url} setUrl={setUrl} />
       </div>
+      
       <div className='infos'>
         <form className='pseudoContainer'>
           <label htmlFor='pseudo' className='pseudo'>
