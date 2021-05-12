@@ -1,0 +1,512 @@
+/*body {
+  display: flex;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1b1b1b;
+}*/
+
+:root {
+  --hearts-fly-range: 1; /* how far they go up */
+  --hearts-speed: 0.5; /* easy speed changer */
+}
+
+.hearts-effects-container {
+  position: absolute;
+  width: 80vw;
+  height: 60vh;
+}
+
+.hearts-effects-container .heart {
+  height: 40px;
+  width: 40px;
+  opacity: 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  filter: drop-shadow(5px 5px 2px black);
+}
+
+@keyframes heart-fade1 {
+  0% {
+    transform: translate(100%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(-100%, calc(-900% * var(--hearts-fly-range)))
+      rotate(360deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade2 {
+  0% {
+    transform: translate(150%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(80%, calc(-890% * var(--hearts-fly-range)))
+      rotate(340deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade3 {
+  0% {
+    transform: translate(200%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(100%, calc(-840% * var(--hearts-fly-range)))
+      rotate(270deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade4 {
+  0% {
+    transform: translate(250%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(115%, calc(-860% * var(--hearts-fly-range)))
+      rotate(210deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade5 {
+  0% {
+    transform: translate(300%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(165%, calc(-865% * var(--hearts-fly-range)))
+      rotate(420deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade6 {
+  0% {
+    transform: translate(350%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(210%, calc(-845% * var(--hearts-fly-range)))
+      rotate(440deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade7 {
+  0% {
+    transform: translate(400%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(240%, calc(-895% * var(--hearts-fly-range)))
+      rotate(120deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade8 {
+  0% {
+    transform: translate(450%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(260%, calc(-885% * var(--hearts-fly-range)))
+      rotate(285deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade9 {
+  0% {
+    transform: translate(500%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(280%, calc(-875% * var(--hearts-fly-range)))
+      rotate(150deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade10 {
+  0% {
+    transform: translate(550%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(310%, calc(-900% * var(--hearts-fly-range)))
+      rotate(180deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes heart-fade11 {
+  0% {
+    transform: translate(600%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(340%, calc(-865% * var(--hearts-fly-range)))
+      rotate(375deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade12 {
+  0% {
+    transform: translate(650%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(365%, calc(-885% * var(--hearts-fly-range)))
+      rotate(395deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade13 {
+  0% {
+    transform: translate(700%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(400%, calc(-790% * var(--hearts-fly-range)))
+      rotate(315deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade14 {
+  0% {
+    transform: translate(750%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(440%, calc(-800% * var(--hearts-fly-range)))
+      rotate(210deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade15 {
+  0% {
+    transform: translate(800%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(480%, calc(-810% * var(--hearts-fly-range)))
+      rotate(330deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade16 {
+  0% {
+    transform: translate(850%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(520%, calc(-820% * var(--hearts-fly-range)))
+      rotate(210deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade17 {
+  0% {
+    transform: translate(900%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(580%, calc(-790% * var(--hearts-fly-range)))
+      rotate(390deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade18 {
+  0% {
+    transform: translate(920%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(600%, calc(-815% * var(--hearts-fly-range)))
+      rotate(310deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade19 {
+  0% {
+    transform: translate(940%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(630%, calc(-825% * var(--hearts-fly-range)))
+      rotate(345deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes heart-fade20 {
+  0% {
+    transform: translate(960%, 0%) rotate(0deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 0;
+  }
+  69% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 0;
+    transform: translate(650%, calc(-845% * var(--hearts-fly-range)))
+      rotate(425deg);
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.hearts-effects-container .heart:nth-child(1) {
+  animation: heart-fade1 calc(3.5s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(2.8s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(2) {
+  animation: heart-fade2 calc(2.1s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(2.1s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(3) {
+  animation: heart-fade3 calc(2.4s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(2.4s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(4) {
+  animation: heart-fade4 calc(3.6s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(3.6s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(5) {
+  animation: heart-fade5 calc(5.3s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(5.3s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(6) {
+  animation: heart-fade6 calc(6.2s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(6.2s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(7) {
+  animation: heart-fade7 calc(3.1s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(3.1s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(8) {
+  animation: heart-fade8 calc(2.3s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(2.3s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(9) {
+  animation: heart-fade9 calc(1.6s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(1.6s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(10) {
+  animation: heart-fade10 calc(2.3s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(2.3s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(11) {
+  animation: heart-fade11 calc(3.8s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(3.8s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(12) {
+  animation: heart-fade12 calc(4.4s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(4.4s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(13) {
+  animation: heart-fade13 calc(4.8s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(4.8s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(14) {
+  animation: heart-fade14 calc(5.2s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(5.2s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(15) {
+  animation: heart-fade15 calc(6.6s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(6.6s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(16) {
+  animation: heart-fade16 calc(3.2s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(3.2s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(17) {
+  animation: heart-fade17 calc(4.1s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(4.1s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(18) {
+  animation: heart-fade18 calc(4.5s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(4.5s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(19) {
+  animation: heart-fade19 calc(5.1s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(5.1s * var(--hearts-speed)) linear infinite;
+}
+.hearts-effects-container .heart:nth-child(20) {
+  animation: heart-fade20 calc(6.1s * var(--hearts-speed)) ease-out infinite,
+    heart-rotation calc(6.1s * var(--hearts-speed)) linear infinite;
+}

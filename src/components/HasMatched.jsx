@@ -1,4 +1,4 @@
-import './hearts.css';
+import './HasMatched.css';
 
 const HasMatched = () => {
   return (
