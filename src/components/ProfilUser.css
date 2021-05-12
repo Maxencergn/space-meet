@@ -1,11 +1,10 @@
 .button-edit {
   max-width: 35px;
-    margin-right: 20px;
-    margin-bottom: -65px;
+  margin-right: 35px;
+  margin-bottom: -65px;
 }
 
 .button-edit-container {
   display: flex;
   justify-content: flex-end;
-  
 }
