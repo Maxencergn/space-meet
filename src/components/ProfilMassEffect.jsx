@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import marker from '../img/marker.png';
 import profil from '../img/profil.png';
 import leftArrow from '../img/left-arrow.png';
+import cake from '../img/cake.svg';
 
 function ProfilMassEffect(props) {
   return (
@@ -22,6 +23,10 @@ function ProfilMassEffect(props) {
         <p>
           <img className='marker-img-pnj' alt='' src={marker} />
           {props.currentPnj.planet}
+        </p>
+        <p>
+          <img className='marker-img-pnj' alt='' src={cake} />
+          {props.currentPnj.age}
         </p>
         <hr width='90%' align='center'></hr>
 
