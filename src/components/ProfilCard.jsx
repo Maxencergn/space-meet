@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import marker from '../img/marker.png';
 import './ProfilCard.css';
 import db from '../db';
