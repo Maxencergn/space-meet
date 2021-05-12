@@ -18,6 +18,7 @@ function App() {
     name: '',
     planet: '',
     race: '',
+    age: '',
     gender: '',
     quote: '',
     description: '',
