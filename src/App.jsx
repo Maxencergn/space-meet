@@ -1,6 +1,7 @@
 import './App.css';
 // import ProfilCard from './components/ProfilCard';
 import ProfilMassEffect from './components/ProfilMassEffect';
+import ProfilPnjChat from './components/ProfilPnjChat';
 import Signup from './components/Signup';
 import ProfilUser from './components/ProfilUser';
 import ProfilEdit from './components/ProfilEdit';
@@ -47,14 +48,15 @@ function App() {
               <Navbar />
               <Match setCurrentPnj={setCurrentPnj} currentPnj={currentPnj} />
             </Route>
-            <Route>
-              <Route exact path='/profilMassEffect'>
-                <ProfilMassEffect currentPnj={currentPnj} />
-              </Route>
-              <Route exact path='/chat'>
-                <Navbar />
-                <Chat />
-              </Route>
+            <Route exact path='/profilMassEffect'>
+              <ProfilMassEffect currentPnj={currentPnj} />
+            </Route>
+            <Route exact path='/chat'>
+              <Navbar />
+              <Chat setCurrentPnj={setCurrentPnj} />
+            </Route>
+            <Route exact path='/profilPnjChat'>
+              <ProfilPnjChat currentPnj={currentPnj} />
             </Route>
           </Switch>
         </div>
