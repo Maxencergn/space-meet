@@ -4,6 +4,7 @@ import './Match.css';
 import MatchNoMore from './MatchNoMore';
 import HasMatched from './HasMatched';
 import { useEffect, useState } from 'react';
+import { FadeTransform } from 'react-animation-components';
 import ProfilCard from './ProfilCard';
 import cross from '../img/cross.png';
 import heart from '../img/heart.png';
@@ -11,7 +12,10 @@ import HasNotMatched from './HasNotMatched';
 
 const Match = ({ setCurrentPnj, currentPnj }) => {
   if (localStorage.getItem('characters') === null)
-    localStorage.setItem('characters', JSON.stringify(db.characters));
+    localStorage.setItem(
+      'characters',
+      JSON.stringify(db.characters.filter((character) => character.like === 0))
+    );
 
   const characters = JSON.parse(localStorage.getItem('characters'));
 
@@ -47,10 +51,10 @@ const Match = ({ setCurrentPnj, currentPnj }) => {
       );
       setRandomId(Math.floor(Math.random() * (filteredCharacters.length - 1)));
       localStorage.setItem('characters', JSON.stringify(characters));
-    }, 3000);
+    }, 2000);
     setTimeout(() => {
       setMatch(null);
-    }, 3000);
+    }, 2000);
   };
 
   const HandleDislike = () => {
@@ -75,12 +79,22 @@ const Match = ({ setCurrentPnj, currentPnj }) => {
         ? filteredCharacters.map(
             (character, index) =>
               randomId === index && (
-                <ProfilCard
-                  key={index}
-                  {...character}
-                  setCurrentPnj={setCurrentPnj}
-                  currentPnj={currentPnj}
-                />
+                <FadeTransform
+                  in
+                  transformProps={{
+                    exitTransform: 'translateX(-100px)',
+                  }}
+                  fadeProps={{
+                    enterOpacity: 0.85,
+                  }}
+                >
+                  <ProfilCard
+                    key={index}
+                    {...character}
+                    setCurrentPnj={setCurrentPnj}
+                    currentPnj={currentPnj}
+                  />
+                </FadeTransform>
               )
           )
         : ''}
