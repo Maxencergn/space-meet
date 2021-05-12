@@ -1,3 +1,4 @@
+import cake from '../img/cake.svg';
 import marker from '../img/marker.png';
 import './ProfilCard.css';
 import db from '../db';
@@ -9,6 +10,7 @@ function ProfilCard({
   characterId,
   name,
   img,
+  age,
   race,
   quote,
   description,
@@ -28,6 +30,7 @@ function ProfilCard({
       id: characterId,
       name: name,
       race: race,
+      age: age,
       gender: gender,
       quote: quote,
       description: description,
@@ -43,6 +46,10 @@ function ProfilCard({
           <div className='container-card'>
             <img className='img-profil-card' src={img} alt='img' />
             <h2 className='name'>{name}</h2>
+            <p className='age'>
+              <img className='marker-img' alt='' src={cake} />
+              {age}
+            </p>
             <p className='race'>
               <img className='marker-img' alt='' src={profil} />
               {race}

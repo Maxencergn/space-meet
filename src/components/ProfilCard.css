@@ -32,7 +32,7 @@
 
 .container-card .name {
   text-align: left;
-  top: 420px;
+  top: 430px;
   position: absolute;
   color: white;
   margin-left: 25px;
@@ -43,7 +43,7 @@
   display: flex;
   align-items: baseline;
   text-align: left;
-  top: 460px;
+  top: 470px;
   position: absolute;
   color: white;
   margin-left: 25px;
@@ -53,7 +53,16 @@
 
 .container-card .planet {
   text-align: left;
-  top: 490px;
+  top: 500px;
+  position: absolute;
+  color: white;
+  margin-left: 25px;
+  text-shadow: 0px 0px 10px black;
+}
+
+.container-card .age {
+  text-align: left;
+  top: 530px;
   position: absolute;
   color: white;
   margin-left: 25px;
