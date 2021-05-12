@@ -19,7 +19,7 @@
   background-color: #eee;
   margin: auto;
   margin-top: 20px;
-  box-shadow:  0px 10px 15px grey;
+  box-shadow: 0px 10px 15px grey;
   cursor: pointer;
 }
 
@@ -32,7 +32,7 @@
 
 .container-card .name {
   text-align: left;
-  top: 430px;
+  top: 340px;
   position: absolute;
   color: white;
   margin-left: 25px;
@@ -43,7 +43,7 @@
   display: flex;
   align-items: baseline;
   text-align: left;
-  top: 470px;
+  top: 380px;
   position: absolute;
   color: white;
   margin-left: 25px;
@@ -53,7 +53,7 @@
 
 .container-card .planet {
   text-align: left;
-  top: 500px;
+  top: 410px;
   position: absolute;
   color: white;
   margin-left: 25px;
@@ -62,7 +62,7 @@
 
 .container-card .age {
   text-align: left;
-  top: 530px;
+  top: 440px;
   position: absolute;
   color: white;
   margin-left: 25px;

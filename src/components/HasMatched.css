@@ -16,6 +16,7 @@
   position: absolute;
   width: 80vw;
   height: 60vh;
+  z-index: 999;
 }
 
 .hearts-effects-container .heart {
