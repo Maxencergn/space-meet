@@ -1,36 +1,29 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 /* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useHistory, Link } from 'react-router-dom';
 import './Signup.css';
-import ChangePicture from './ChangePicture';
+import './ProfilEdit.css';
+import ChangeMiniPicture from './ChangeMiniPicture';
 
 function ProfilEdit(props) {
-  const [pseudo, setPseudo] = useState('');
-  const [birthday, setBirthday] = useState('');
-  const [email, setEmail] = useState('');
-  const [race, setRace] = useState('');
-  const [gender, setGender] = useState('');
-  const [about, setAbout] = useState('');
-  const [quote, setQuote] = useState('');
-  const photoOK = localStorage.getItem('picture');
-  const [enableCreation, setEnableCreation] = useState(false);
+  const [pseudo, setPseudo] = useState(localStorage.getItem('pseudo'));
+  const [birthday, setBirthday] = useState(localStorage.getItem('birthday'));
+  const [email, setEmail] = useState(localStorage.getItem('email'));
+  const [race, setRace] = useState(localStorage.getItem('race'));
+  const [gender, setGender] = useState(localStorage.getItem('gender'));
+  const [about, setAbout] = useState(localStorage.getItem('about'));
+  const [quote, setQuote] = useState(localStorage.getItem('quote'));
 
-  const [pictureUploaded, setPictureUploaded] = useState(false);
+  useEffect(() => {
+    if (localStorage.getItem('about') === null) setAbout('');
+    if (localStorage.getItem('quote') === null) setQuote('');
+  }, []);
 
   const history = useHistory();
 
-  if (
-    pseudo &&
-    birthday &&
-    email &&
-    race &&
-    gender &&
-    photoOK &&
-    !enableCreation
-  )
-    setEnableCreation(true);
+  const [url, setUrl] = useState(localStorage.getItem('picture'));
 
   const handleClic = () => {
     localStorage.setItem('pseudo', pseudo);
@@ -46,11 +39,8 @@ function ProfilEdit(props) {
   return (
     <div className='ProfileCreation'>
       <h1 className='spacemeet'>Account setting</h1>
-      <div className={pictureUploaded ? 'pictureUp' : 'picture'}>
-        <ChangePicture
-          pictureUploaded={pictureUploaded}
-          setPictureUploaded={setPictureUploaded}
-        />
+      <div className='pictureEdit'>
+        <ChangeMiniPicture url={url} setUrl={setUrl} />
       </div>
       <div className='infos'>
         <form className='pseudoContainer'>
@@ -174,7 +164,6 @@ function ProfilEdit(props) {
                   type='submit'
                   id='submit'
                   onClick={handleClic}
-                  disabled={!enableCreation}
                 >
                   Modifier mon compte
                 </button>
