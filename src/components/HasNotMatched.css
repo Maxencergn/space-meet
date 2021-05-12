@@ -1,0 +1,31 @@
+.align-center {
+  position: absolute;
+  top: 30%;
+  left: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumbs-down {
+  color: red;
+  width: 200px;
+  height: 200px;
+  animation-name: thumbDown;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
+  transition: 0.2s ease-out;
+  filter: drop-shadow(4px 4px 2px black);
+}
+
+@keyframes thumbDown {
+  0% {
+    transform: rotate(-25deg) translate(0);
+  }
+  50% {
+    transform: rotate(25deg) translate(0px, 2px);
+  }
+  100% {
+    transform: rotate(-25deg) translate(0);
+  }
+}

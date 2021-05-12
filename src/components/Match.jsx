@@ -2,10 +2,12 @@
 import db from '../db';
 import './Match.css';
 import MatchNoMore from './MatchNoMore';
+import HasMatched from './HasMatched';
 import { useEffect, useState } from 'react';
 import ProfilCard from './ProfilCard';
 import cross from '../img/cross.png';
 import heart from '../img/heart.png';
+import HasNotMatched from './HasNotMatched';
 
 const Match = ({ setCurrentPnj, currentPnj }) => {
   if (localStorage.getItem('characters') === null)
@@ -17,6 +19,8 @@ const Match = ({ setCurrentPnj, currentPnj }) => {
   const [randomId, setRandomId] = useState(
     Math.floor(Math.random() * characters.length)
   );
+
+  const [match, setMatch] = useState(null);
 
   useEffect(() => {
     if (currentPnj.id) {
@@ -31,12 +35,22 @@ const Match = ({ setCurrentPnj, currentPnj }) => {
     for (let i = 0; i < filteredCharacters.length; i++) {
       if (filteredCharacters[i].characterId === charId)
         characters[charId].like = 1;
+      if (characters[charId].isRomanceable) {
+        setMatch(true);
+      } else {
+        setMatch(false);
+      }
     }
-    setFilteredCharacters(
-      characters.filter((character) => character.like === 0)
-    );
-    setRandomId(Math.floor(Math.random() * (filteredCharacters.length - 1)));
-    localStorage.setItem('characters', JSON.stringify(characters));
+    setTimeout(() => {
+      setFilteredCharacters(
+        characters.filter((character) => character.like === 0)
+      );
+      setRandomId(Math.floor(Math.random() * (filteredCharacters.length - 1)));
+      localStorage.setItem('characters', JSON.stringify(characters));
+    }, 3000);
+    setTimeout(() => {
+      setMatch(null);
+    }, 3000);
   };
 
   const HandleDislike = () => {
@@ -54,6 +68,8 @@ const Match = ({ setCurrentPnj, currentPnj }) => {
 
   return (
     <div className='div-match'>
+      {match && <HasMatched />}
+      {match === false && <HasNotMatched />}
       {!filteredCharacters.length && <MatchNoMore />}
       {filteredCharacters.length
         ? filteredCharacters.map(
